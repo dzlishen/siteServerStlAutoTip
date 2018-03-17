@@ -1,0 +1,32 @@
+{
+    "name": "siteServerStlAutoTip",
+    "displayName": "siteServer stl语言自动补全",
+    "description": "siteServer stl语言中常用的组件自动补全",
+    "version": "0.0.2",
+    "publisher": "dzlishen",
+    "icon": "images/favicon.ico",
+    "categories": [
+        "Snippets"
+    ],
+    "galleryBanner": {
+        "color": "#f5f3f4",
+        "theme": "light"
+    },
+    "homepage": "http://www.sinohuaxia.cn",
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "engines": {
+        "vscode": "^1.5.0"
+    },
+    "keywords": [
+        "stl autotip"
+    ],
+    "contributes": {
+        "snippets": [{
+            "language": "html",
+            "path": "./snippets/html.json"
+        }]
+    }
+}
