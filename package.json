@@ -15,7 +15,7 @@
     "homepage": "http://www.sinohuaxia.cn",
     "repository": {
         "type": "git",
-        "url": ""
+        "url": "https://github.com/dzlishen/siteServerStlAutoTip.git"
     },
     "engines": {
         "vscode": "^1.5.0"
