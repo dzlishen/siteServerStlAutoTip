@@ -1,8 +1,8 @@
 {
     "name": "siteServerStlAutoTip",
-    "displayName": "siteServer stl语言自动补全",
+    "displayName": "siteServer CMS 6.0 stl语言自动补全",
     "description": "siteServer stl语言中常用的组件自动补全",
-    "version": "0.0.2",
+    "version": "6.0.0",
     "publisher": "dzlishen",
     "icon": "images/favicon.ico",
     "categories": [

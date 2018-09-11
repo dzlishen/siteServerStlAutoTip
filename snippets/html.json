@@ -1,549 +1,1466 @@
 {
-    "stl:channels": {
-        "prefix": "stl:c",
-        "body": [
-            "<stl:channels",
-            "\talign=\"整体对齐\"",
-            "\tcellPadding=\"填充\"",
-            "\tcellSpacing=\"间距\"",
-            "\tchannelIndex=\"栏目索引\"",
-            "\tchannelName=\"栏目名称\"",
-            "\tclass=\"Css类\"",
-            "\tcolumns=\"列数\"",
-            "\tdirection=\"方向\"",
-            "\tgroupChannel=\"指定显示的栏目组\"",
-            "\tgroupChannelNot=\"指定不显示的栏目组\"",
-            "\theight=\"整体高度\"",
-            "\tisAllChildren=\"是否显示所有级别的子栏目\"",
-            "\tisDynamic=\"是否动态显示\"",
-            "\tisImage=\"仅显示图片栏目\"",
-            "\tisTotal=\"是否从所有栏目中选择\"",
-            "\titemAlign=\"项水平对齐\"",
-            "\titemClass=\"项Css类\"",
-            "\titemHeight=\"项高度\"",
-            "\titemVerticalAlign=\"项垂直对齐\"",
-            "\titemWidth=\"项宽度\"",
-            "\tlayout=\"指定列表布局方式\"",
-            "\torder=\"排序\"",
-            "\tstartNum=\"从第几条信息开始显示\" ",
-            "\ttopLevel=\"从首页向下的栏目级别\"",
-            "\ttotalNum=\"显示栏目数目\"",
-            "\tupLevel=\"上级栏目的级别\"",
-            "\twhere=\"获取栏目列表的条件判断\"",
-            "\twidth=\"整体宽度\">",
-            "</stl:channels>"
-        ],
-        "description": "通过stl:channels 标签在模板中显示栏目列表"
-    },
-    "stl:channel": {
-        "prefix": "stl:c",
-        "body": [
-            "<stl:channel",
-            "\tchannelIndex=\"栏目索引\"",
-            "\tchannelName=\"栏目名称\"",
-            "\tellipsis=\"文字超出部分显示的文字\"",
-            "\tformatString=\"显示的格式\"",
-            "\tisClearTags=\"是否清除HTML标签\"",
-            "\tisDynamic=\"是否动态显示\"",
-            "\tisLower=\"是否转换为小写\"",
-            "\tisReturnToBr=\"是否将回车替换为HTML换行标签\"",
-            "\tisUpper=\"是否转换为大写\"",
-            "\tleftText=\"显示在信息前的文字\"",
-            "\tlength=\"指定字符长度\"",
-            "\tparent=\"显示父栏目属性\"",
-            "\treplace=\"需要替换的文字，可以是正则表达式\"",
-            "\trightText=\"显示在信息后的文字\"",
-            "\tseparator=\"显示多项时的分割字符串\"",
-            "\tstartIndex=\"字符开始位置\"",
-            "\tto=\"替换replace的文字信息\"",
-            "\ttopLevel=\"从首页向下的栏目级别\"",
-            "\ttype=\"显示的类型\"",
-            "\tupLevel=\"上级栏目的级别\"",
-            "\twordNum=\"显示字符的数目\">",
-            "</stl:channel>"
-        ],
-        "description": "通过 stl:channel 标签在模板中显示指定栏目的属性值"
-    },
-    "stl:contents": {
-        "prefix": "stl:c",
-        "body": [
-            "<stl:contents",
-            "\talign=\"整体对齐\"",
-            "\tcellPadding=\"填充\"",
-            "\tcellSpacing=\"间距\"",
-            "\tchannelIndex=\"栏目索引\"",
-            "\tchannelName=\"栏目名称\"",
-            "\tclass=\"Css类\"",
-            "\tcolumns=\"列数\"",
-            "\tdirection=\"方向\"",
-            "\tgroup=\"指定显示的内容组\"",
-            "\tgroupChannel=\"指定显示的栏目组\"",
-            "\tgroupChannelNot=\"指定不显示的栏目组\"",
-            "\tgroupContent=\"指定显示的内容组\"",
-            "\tgroupContentNot=\"指定不显示的内容组\"",
-            "\tgroupNot=\"指定不显示的内容组\"",
-            "\theight=\"整体高度\"",
-            "\tisColor=\"仅显示醒目内容\"",
-            "\tisDynamic=\"是否动态显示\"",
-            "\tisFile=\"仅显示附件内容\"",
-            "\tisHot=\"仅显示热点内容\"",
-            "\tisImage=\"仅显示图片内容\"",
-            "\tisNoDup=\"不显示重复标题的内容\"",
-            "\tisRecommend=\"仅显示推荐内容\"",
-            "\tisRelatedContents=\"显示相关内容列表\"",
-            "\tisTop=\"仅显示置顶内容\"",
-            "\tisVideo=\"仅显示视频内容\"",
-            "\titemAlign=\"项水平对齐\"",
-            "\titemClass=\"项Css类\"",
-            "\titemHeight=\"项高度\"",
-            "\titemVerticalAlign=\"项垂直对齐\"",
-            "\titemWidth=\"项宽度\"",
-            "\tlayout=\"指定列表布局方式\"",
-            "\torder=\"排序\"",
-            "\tscope=\"内容范围\"",
-            "\tstartNum=\"从第几条信息开始显示\"",
-            "\ttags=\"指定标签\" ",
-            "\ttopLevel=\"从首页向下的栏目级别\"",
-            "\ttotalNum=\"显示内容数目\"",
-            "\tupLevel=\"上级栏目的级别\"",
-            "\twhere=\"获取内容列表的条件判断\"",
-            "\twidth=\"整体宽度\">",
-            "</stl:contents>"
-        ],
-        "description": "通过 stl:contents 标签在模板中显示内容列表"
-    },
-    "stl:content": {
-        "prefix": "stl:c",
-        "body": [
-            "<stl:content",
-            "\tellipsis=\"文字超出部分显示的文字\"",
-            "\tformatString=\"显示的格式\"",
-            "\tisClearTags=\"是否清除HTML标签\"",
-            "\tisDynamic=\"是否动态显示\"",
-            "\tisLower=\"是否转换为小写\"",
-            "\tisOriginal=\"如果是引用内容，是否获取所引用内容的值\"",
-            "\tisReturnToBr=\"是否将回车替换为HTML换行标签\"",
-            "\tisUpper=\"是否转换为大写\"",
-            "\tleftText=\"显示在信息前的文字\"",
-            "\tlength=\"指定字符长度\"",
-            "\tno=\"显示第几项\"",
-            "\treplace=\"需要替换的文字，可以是正则表达式\"",
-            "\trightText=\"显示在信息后的文字\"",
-            "\tseparator=\"显示多项时的分割字符串\"",
-            "\tstartIndex=\"字符开始位置\"",
-            "\tto=\"替换replace的文字信息\"",
-            "\ttype=\"显示的类型\"",
-            "\twordNum=\"显示字符的数目\">",
-            "</stl:content>"
-        ],
-        "description": "通过 stl:content 标签在模板中显示指定内容的属性值"
-    },
-    "stl:pageItems": {
-        "prefix": "stl:p",
-        "body": ["<stl:pageItems", "\tcontext=\"所处上下文\">", "</stl:pageItems>"],
-        "description": "通过 stl:pageItems 标签在模板中插入翻页项的容器，当不需要翻页时容器内的内容不显示"
-    },
-    "stl:pageItem": {
-        "prefix": "stl:p",
-        "body": ["<stl:pageItem", "\talwaysA=\"页码总是超链接，包括无连接时\"", "\thasLR=\"页码导航是否包含左右字符\"", "\tlinkClass=\"链接CSS样式\"", "\tlistEllipsis=\"页导航或页跳转链接太多时显示的省略号\"", "\tlistNum=\"页导航或页跳转显示链接数\"", "\tlStr=\"页面左字符\"", "\trStr=\"页面右字符\"", "\ttext=\"显示的文字\"", "\ttextClass=\"文字CSS样式\"", "\ttype=\"类型\">", "</stl:pageItem>"],
-        "description": "通过 stl:pageItem 标签在模板中显示翻页项（上一页、下一页、当前页、页跳转、页导航等）"
-    },
-    "stl:pageChannels": {
-        "prefix": "stl:p",
-        "body": ["<stl:pageChannels", "\talign=\"整体对齐\"", "\tcellPadding=\"填充\"", "\tcellSpacing=\"间距\"", "\tchannelIndex=\"栏目索引\"", "\tchannelName=\"栏目名称\"", "\tclass=\"Css类\"", "\tcolumns=\"列数\"", "\tdirection=\"方向\"", "\tgroupChannel=\"指定显示的栏目组\"", "\tgroupChannelNot=\"指定不显示的栏目组\"", "\theight=\"整体高度\"", "\tisAllChildren=\"是否显示所有级别的子栏目\"", "\tisDynamic=\"是否动态显示\"", "\tisImage=\"仅显示图片栏目\"", "\tisTotal=\"是否从所有栏目中选择\"", "\titemAlign=\"项水平对齐\"", "\titemClass=\"项Css类\"", "\titemHeight=\"项高度\"", "\titemVerticalAlign=\"项垂直对齐\"", "\titemWidth=\"项宽度\"", "\tlayout=\"指定列表布局方式\"", "\torder=\"排序\"", "\tpageNum=\"每页显示的栏目数目\"", "\tstartNum=\"从第几条信息开始显示\"", "\ttitleWordNum=\"栏目名称文字数量\"", "\ttopLevel=\"从首页向下的栏目级别\"", "\ttotalNum=\"显示栏目数目\"", "\tupLevel=\"上级栏目的级别\"", "\twhere=\"获取栏目列表的条件判断\"", "\twidth=\"整体宽度\">", "</stl:pageChannels>"],
-        "description": "通过 stl:pageChannels 标签在模板中显示翻页栏目列表"
-    },
-    "stl:pageContents": {
-        "prefix": "stl:p",
-        "body": ["<stl:pageContents", "\talign=\"整体对齐\"", "\tcellPadding=\"填充\"", "\tcellSpacing=\"间距\"", "\tchannelIndex=\"栏目索引\"", "\tchannelName=\"栏目名称\"", "\tclass=\"Css类\"", "\tcolumns=\"列数\"", "\tdirection=\"方向\"", "\tgroup=\"指定显示的内容组\"", "\tgroupChannel=\"指定显示的栏目组\"", "\tgroupChannelNot=\"指定不显示的栏目组\"", "\tgroupContent=\"指定显示的内容组\"", "\tgroupContentNot=\"指定不显示的内容组\"", "\tgroupNot=\"指定不显示的内容组\"", "\theight=\"整体高度\"", "\tisColor=\"仅显示醒目内容\"", "\tisDynamic=\"是否动态显示\"", "\tisFile=\"仅显示附件内容\"", "\tisHot=\"仅显示热点内容\"", "\tisImage=\"仅显示图片内容\"", "\tisNoDup=\"不显示重复标题的内容\"", "\tisRecommend=\"仅显示推荐内容\"", "\tisRelatedContents=\"显示相关内容列表\"", "\tisTop=\"仅显示置顶内容\"", "\tisVideo=\"仅显示视频内容\"", "\titemAlign=\"项水平对齐\"", "\titemClass=\"项Css类\"", "\titemHeight=\"项高度\"", "\titemVerticalAlign=\"项垂直对齐\"", "\titemWidth=\"项宽度\"", "\tlayout=\"指定列表布局方式\"", "\tmaxPage=\"翻页中生成的静态页面最大数，剩余页面将动态获取\"", "\torder=\"排序\"", "\tpageNum=\"每页显示的内容数目\"", "\tscope=\"内容范围\"", "\tstartNum=\"从第几条信息开始显示\"", "\ttags=\"指定标签\"", "\ttitleWordNum=\"内容标题文字数量\"", "\ttopLevel=\"从首页向下的栏目级别\"", "\ttotalNum=\"显示内容数目\"", "\tupLevel=\"上级栏目的级别\"", "\twhere=\"获取内容列表的条件判断\"", "\twidth=\"整体宽度\">", "</stl:pageContents>"],
-        "description": "通过 stl:pageContents 标签在模板中显示翻页内容列表"
-    },
-    "stl:pageSqlContents": {
-        "prefix": "stl:p",
-        "body": ["<stl:pageSqlContents", "\talign=\"整体对齐\"", "\tcellPadding=\"填充\"", "\tcellSpacing=\"间距\"", "\tclass=\"Css类\"", "\tcolumns=\"列数\"", "\tconnectionString=\"数据库链接字符串\"", "\tconnectionStringName=\"数据库链接字符串名称\"", "\tdirection=\"方向\"", "\theight=\"整体高度\"", "\tisDynamic=\"是否动态显示\"", "\titemAlign=\"项水平对齐\"", "\titemClass=\"项Css类\"", "\titemHeight=\"项高度\"", "\titemVerticalAlign=\"项垂直对齐\"", "\titemWidth=\"项宽度\"", "\tlayout=\"指定列表布局方式\"", "\torder=\"排序\"", "\tpageNum=\"每页显示的内容数目\"", "\tstartNum=\"从第几条信息开始显示\"", "\ttotalNum=\"显示内容数目\"", "\twidth=\"整体宽度\">", "</stl:pageSqlContents>"],
-        "description": "通过 stl:pageSqlContents 标签在模板中显示能够翻页的数据库列表"
-    },
-    "stl:pageComments": {
-        "prefix": "stl:p",
-        "body": ["<stl:pageComments", "\talign=\"整体对齐\"", "\tcellPadding=\"填充\"", "\tcellSpacing=\"间距\"", "\tclass=\"Css类\"", "\tcolumns=\"列数\"", "\tdirection=\"方向\"", "\theight=\"整体高度\"", "\tisDynamic=\"是否动态显示\"", "\titemAlign=\"项水平对齐\"", "\titemClass=\"项Css类\"", "\titemHeight=\"项高度\"", "\titemVerticalAlign=\"项垂直对齐\"", "\titemWidth=\"项宽度\"", "\tlayout=\"指定列表布局方式\"", "\torder=\"排序\"", "\tpageNum=\"每页显示的栏目数目\"", "\tstartNum=\"从第几条信息开始显示\"", "\ttotalNum=\"显示内容数目\"", "\twhere=\"获取评论列表的条件判断\"", "\twidth=\"整体宽度\">", "</stl:pageComments>"],
-        "description": "通过 stl:pageComments 标签在模板中显示翻页评论列表"
-    },
-    "stl:pageInputContents": {
-        "prefix": "stl:p",
-        "body": ["<stl:pageInputContents", "\talign=\"整体对齐\"", "\tcellPadding=\"填充\"", "\tcellSpacing=\"间距\"", "\tclass=\"Css类\"", "\tcolumns=\"列数\"", "\tdirection=\"方向\"", "\theight=\"整体高度\"", "\tinputName=\"提交表单名称\"", "\tisDynamic=\"是否动态显示\"", "\tisReply=\"是否仅显示已回复内容\"", "\titemAlign=\"项水平对齐\"", "\titemClass=\"项Css类\"", "\titemHeight=\"项高度\"", "\titemVerticalAlign=\"项垂直对齐\"", "\titemWidth=\"项宽度\"", "\tlayout=\"指定列表布局方式\"", "\torder=\"排序\"", "\tpageNum=\"每页显示的提交内容数目\"", "\tstartNum=\"从第几条信息开始显示\"", "\ttotalNum=\"显示内容数目\"", "\twhere=\"获取内容列表的条件判断\"", "\twidth=\"整体宽度\">", "</stl:pageInputContents>"],
-        "description": "通过 stl:pageInputContents 标签在模板中显示翻页提交表单列表"
-    },
     "stl:a": {
         "prefix": "stl:a",
-        "body": ["<stl:a", "\t    channelIndex=\"栏目索引\"", "\t    channelName=\"栏目名称\"", "\t    context=\"所处上下文\"", "\t    host=\"链接域名\"", "\t    href=\"链接地址\"", "\t    id=\"唯一标识符\"", "\t    isDynamic=\"是否动态显示\"", "\t    parent=\"显示父栏目\"", "\t    queryString=\"链接参数\"", "\t    topLevel=\"从首页向下的栏目级别\"", "\t    upLevel=\"上级栏目的级别\">", "</stl:a>"],
-        "description": "通过 stl:a 标签在模板中创建链接，系统将根据所处上下文计算链接地址"
-    },
-    "stl:location": {
-        "prefix": "stl:l",
-        "body": ["<stl:location", "\tisDynamic=\"是否动态显示\"", "\tlinkClass=\"链接CSS样式\"", "\tseparator=\"当前位置分隔符\"", "\ttarget=\"打开窗口的目标\"", "\twordNum=\"链接字数\">", "</stl:location>"],
-        "description": "通过 stl:location 标签在模板中插入页面的当前位置"
-    },
-    "stl:navigation": {
-        "prefix": "stl:n",
-        "body": ["<stl:navigation", "\temptyText=\"当无内容时显示的信息\"", "\tisDynamic=\"是否动态显示\"", "\tisKeyboard=\"是否开启键盘，↑↓←→键分别为上下左右\"", "\ttipText=\"导航提示信息\"", "\ttype=\"类型\"", "\twordNum=\"显示字数\">", "</stl:navigation>"],
-        "description": "通过 stl:navigation 标签在模板中显示链接导航"
-    },
-    "stl:tree": {
-        "prefix": "stl:t",
-        "body": ["<stl:tree", "\tchannelIndex=\"栏目索引\"", "\tchannelName=\"栏目名称\"", "\tcurrentFormatString=\"当前项格式化字符串\"", "\tgroupChannel=\"指定显示的栏目组\"", "\tgroupChannelNot=\"指定不显示的栏目组\"", "\tisDynamic=\"是否动态显示\"", "\tisLoading=\"是否AJAX方式即时载入\"", "\tisShowContentNum=\"是否显示栏目内容数\"", "\tisShowTreeLine=\"是否显示树状线\"", "\ttarget=\"打开窗口目标\"", "\ttitle=\"根节点显示名称\"", "\ttopLevel=\"从首页向下的栏目级别\"", "\tupLevel=\"上级栏目的级别\">", "</stl:tree>"],
-        "description": "通过 stl:tree 标签在模板中显示树状导航"
-    },
-    "stl:menu": {
-        "prefix": "stl:m",
-        "body": ["<stl:menu", "\tchannelIndex=\"栏目索引\"", "\tchannelName=\"栏目名称\"", "\tchildMenuDisplay=\"二级菜单显示方式\"", "\tchildMenuHeight=\"二级菜单高度\"", "\tchildMenuWidth=\"二级菜单宽度\"", "\tgroupChannel=\"指定显示的栏目组\"", "\tgroupChannelNot=\"指定不显示的栏目组\"", "\tisDynamic=\"是否动态显示\"", "\tisShowChildren=\"是否显示二级菜单\"", "\tmenuHeight=\"菜单高度\"", "\tmenuWidth=\"菜单宽度\"", "\tstyleName=\"样式名称\"", "\ttarget=\"打开窗口目标\"", "\txPosition=\"菜单水平位置\"", "\tyPosition=\"菜单垂直位置\">", "</stl:menu>"],
-        "description": "通过 stl:menu 标签在模板中显示栏目下拉菜单"
-    },
-    "stl:image": {
-        "prefix": "stl:i",
-        "body": ["<stl:image", "\taltSrc=\"当指定的图片不存在时显示的图片地址\"", "\tchannelIndex=\"栏目索引\"", "\tchannelName=\"栏目名称\"", "\theight=\"高度\"", "\tisDynamic=\"是否动态显示\"", "\tisOriginal=\"如果是引用内容，是否获取所引用内容的值\"", "\tno=\"显示字段的顺序\"", "\tparent=\"显示父栏目\"", "\tsrc=\"显示的图片地址\"", "\ttopLevel=\"从首页向下的栏目级别\"", "\ttype=\"指定存储图片的字段\"", "\tupLevel=\"上级栏目的级别\"", "\twidth=\"宽度\">", "</stl:image>"],
-        "description": "通过 stl:image 标签在模板中显示栏目或内容的图片"
-    },
-    "stl:file": {
-        "prefix": "stl:f",
-        "body": ["<stl:file", "\tisCount=\"是否记录文件下载次数\"", "\tisDynamic=\"是否动态显示\"", "\tisFileSize=\"显示文件大小\"", "\tleftText=\"显示在信息前的文字\"", "\tno=\"显示字段的顺序\"", "\trightText=\"显示在信息后的文字\"", "\tsrc=\"需要下载的文件地址\"", "\ttype=\"指定存储附件的字段\">", "</stl:file>"],
-        "description": "通过 stl:file 标签在模板中显示文件下载链接"
-    },
-    "stl:focusViewer": {
-        "prefix": "stl:f",
-        "body": ["<stl:focusViewer", "\tbgColor=\"背景色\"", "\tchannelIndex=\"栏目索引\"", "\tchannelName=\"栏目名称\"", "\tgroup=\"指定显示的内容组\"", "\tgroupChannel=\"指定显示的栏目组\"", "\tgroupChannelNot=\"指定不显示的栏目组\"", "\tgroupContent=\"指定显示的内容组\"", "\tgroupContentNot=\"指定不显示的内容组\"", "\tgroupNot=\"指定不显示的内容组\"", "\theight=\"图片高度\"", "\tisColor=\"仅显示醒目内容\"", "\tisDynamic=\"是否动态显示\"", "\tisHot=\"仅显示热点内容\"", "\tisRecommend=\"仅显示推荐内容\"", "\tisShowText=\"是否显示文字标题\"", "\tisTop=\"仅显示置顶内容\"", "\tisTopText=\"是否文字显示在顶端\"", "\torder=\"排序\"", "\tscope=\"范围\"", "\tstartNum=\"从第几条信息开始显示\"", "\ttags=\"指定标签\"", "\ttheme=\"主题样式\"", "\ttitleWordNum=\"标题文字数量\"", "\ttotalNum=\"标题文字数量\"", "\twhere=\"获取滚动焦点图的条件判断\"", "\twidth=\"图片宽度\">", "</stl:focusViewer>"],
-        "description": "通过 stl:focusviewer 标签在模板中实现由 FLASH 显示的图片轮播效果"
-    },
-    "stl:flash": {
-        "prefix": "stl:f",
-        "body": ["<stl:flash", "\taltSrc=\"当指定的flash不存在时显示的flash地址\"", "\tchannelIndex=\"栏目索引\"", "\tchannelName=\"栏目名称\"", "\theight=\"高度\"", "\tisDynamic=\"是否动态显示\"", "\tparent=\"显示父栏目\"", "\tsrc=\"显示的flash地址\"", "\ttopLevel=\"从首页向下的栏目级别\"", "\ttype=\"指定存储flash的字段\"", "\tupLevel=\"上级栏目的级别\"", "\twidth=\"宽度\">", "</stl:flash>"],
-        "description": "通过 stl:flash 标签在模板中获取并显示栏目或内容的Flash"
-    },
-    "stl:slide": {
-        "prefix": "stl:s",
-        "body": ["<stl:slide", "\tisDynamic=\"是否动态显示\">", "</stl:slide>"],
-        "description": "通过 stl:slide 标签在模板中显示图片幻灯片"
-    },
-    "stl:photo": {
-        "prefix": "stl:p",
-        "body": ["<stl:photo", "\t    ellipsis=\"文字超出部分显示的文字\"", "\t    formatString=\"显示的格式\"", "\t    isClearTags=\"是否清除标签信息\"", "\t    isDynamic=\"是否动态显示\"", "\t    isLower=\"是否转换为小写\"", "\t    isReturnToBr=\"是否将回车替换为HTML换行标签\"", "\t    isUpper=\"是否转换为大写\"", "\t    leftText=\"显示在信息前的文字\"", "\t    length=\"指定字符长度\"", "\t    replace=\"需要替换的文字，可以是正则表达式\"", "\t    rightText=\"显示在信息后的文字\"", "\t    startIndex=\"字符开始位置\"", "\t    to=\"替换replace的文字信息\"", "\t    type=\"类型\"", "\t    wordNum=\"显示字符的数目\">", "</stl:photo>"],
-        "description": "通过 stl:photo 标签在模板中显示内容的相册图片"
-    },
-    "stl:player": {
-        "prefix": "stl:p",
-        "body": ["<stl:player", "\tchannelIndex=\"栏目索引\"", "\tchannelName=\"栏目名称\"", "\theight=\"高度\"", "\timageUrl=\"图片地址\"", "\tisAutoPlay=\"是否自动播放\"", "\tisDynamic=\"是否动态显示\"", "\tparent=\"显示父栏目\"", "\tplayBy=\"指定播放器\"", "\tplayUrl=\"视频地址\"", "\tstretching=\"拉伸\"", "\ttopLevel=\"从首页向下的栏目级别\"", "\ttype=\"指定存储媒体的字段\"", "\tupLevel=\"上级栏目的级别\"", "\twidth=\"宽度\">", "</stl:player>"],
-        "description": "通过 stl:player 标签在模板中播放视频"
-    },
-    "stl:video": {
-        "prefix": "stl:v",
-        "body": ["<stl:video", "\tchannelIndex=\"栏目索引\"", "\tchannelName=\"栏目名称\"", "\theight=\"高度\"", "\timageUrl=\"图片地址\"", "\tisAutoPlay=\"是否自动播放\"", "\tisControls=\"是否显示播放控件\"", "\tisDynamic=\"是否动态显示\"", "\tisLoop=\"是否循环播放\"", "\tisPreload=\"是否预载入\"", "\tparent=\"显示父栏目\"", "\tplayUrl=\"视频地址\"", "\ttopLevel=\"从首页向下的栏目级别\"", "\ttype=\"指定视频的字段\"", "\tupLevel=\"上级栏目的级别\"", "\twidth=\"宽度\">", "</stl:video>"],
-        "description": "通过 stl:video 标签在模板中显示视频播放器"
-    },
-    "stl:audio": {
-        "prefix": "stl:a",
-        "body": ["<stl:audio", "\tisAutoPlay=\"是否自动播放\"", "\tisDynamic=\"是否动态显示\"", "\tisLoop=\"是否循环播放\"", "\tisPreload=\"是否预载入\"", "\tplayUrl=\"音频地址\"", "\ttype=\"指定存储音频的内容字段，默认为VideoUrl\">", "</stl:audio>"],
-        "description": "通过 stl:audio 标签在模板中显示并播放音频文件"
-    },
-    "stl:if": {
-        "prefix": "stl:i",
-        "body": ["<stl:if", "\tcontext=\"所处上下文\"", "\tisDynamic=\"是否动态显示\"", "\toperate=\"测试操作\"", "\ttype=\"测试类型\"", "\tvalue=\"测试值\">", "</stl:if>"],
-        "description": "通过 stl:if 标签在模板中根据条件判断显示内容"
-    },
-    "stl:itemTemplate": {
-        "prefix": "stl:i",
-        "body": ["<stl:itemTemplate", "\tselected=\"列表当前选定项类型\"", "\tselectedValue=\"当前选定项的值\"", "\ttype=\"列表项类型\">", "</stl:itemTemplate>"],
-        "description": "通过 stl:itemTemplate 标签在模板中控制列表中每一项的显示内容及样式"
-    },
-    "stl:loading": {
-        "prefix": "stl:l",
-        "body": ["<stl:loading></stl:loading>"],
-        "description": "通过 stl:loading 标签在模板中创建载入中显示的内容"
-    },
-    "stl:template": {
-        "prefix": "stl:t",
-        "body": ["<stl:template></stl:template>"],
-        "description": "通过 stl:template 标签在模板中定义显示模板"
-    },
-    "stl:yes": {
-        "prefix": "stl:y",
-        "body": ["<stl:yes></stl:yes>"],
-        "description": "通过 stl:yes 标签在模板中显示成功模板"
-    },
-    "stl:no": {
-        "prefix": "stl:n",
-        "body": ["<stl:no></stl:no>"],
-        "description": "通过 stl:no 标签在模板中显示失败模板"
-    },
-    "stl:sqlContents": {
-        "prefix": "stl:s",
-        "body": ["<stl:sqlContents", "\talign=\"整体对齐\"", "\tcellPadding=\"填充\"", "\tcellSpacing=\"间距\"", "\tclass=\"Css类\"", "\tcolumns=\"列数\"", "\tconnectionString=\"数据库链接字符串\"", "\tconnectionStringName=\"数据库链接字符串名称\"", "\tdirection=\"方向\"", "\theight=\"整体高度\"", "\tisDynamic=\"是否动态显示\"", "\titemAlign=\"项水平对齐\"", "\titemClass=\"项Css类\"", "\titemHeight=\"项高度\"", "\titemVerticalAlign=\"项垂直对齐\"", "\titemWidth=\"项宽度\"", "\tlayout=\"指定列表布局方式\"", "\torder=\"排序\"", "\tstartNum=\"从第几条信息开始显示\"", "\ttotalNum=\"显示内容数目\"", "\twidth=\"整体宽度\">", "</stl:sqlContents>"],
-        "description": "通过 stl:sqlContents 标签在模板中显示数据库列表"
-    },
-    "stl:sqlContent": {
-        "prefix": "stl:s",
-        "body": ["<stl:sqlContent", "\tconnectionString=\"数据库链接字符串\"", "\tconnectionStringName=\"数据库链接字符串名称\"", "\tellipsis=\"文字超出部分显示的文字\"", "\tformatString=\"显示的格式\"", "\tisClearTags=\"是否清除标签信息\"", "\tisDynamic=\"是否动态显示\"", "\tisLower=\"是否转换为小写\"", "\tisReturnToBr=\"是否将回车替换为HTML换行标签\"", "\tisUpper=\"是否转换为大写\"", "\tleftText=\"显示在信息前的文字\"", "\tlength=\"指定字符长度\"", "\tqueryString=\"数据库查询语句\"", "\treplace=\"需要替换的文字，可以是正则表达式\"", "\trightText=\"显示在信息后的文字\"", "\tstartIndex=\"字符开始位置\"", "\tto=\"替换replace的文字信息\"", "\ttype=\"显示的类型\"", "\twordNum=\"显示字符的数目\">", "</stl:sqlContent>"],
-        "description": "通过 stl:sqlContent 标签在模板中显示数据库值"
-    },
-    "stl:queryString": {
-        "prefix": "stl:q",
-        "body": ["<stl:queryString></stl:queryString>"],
-        "description": "通过 stl:queryString 标签在模板中定义SQL查询语句"
-    },
-    "stl:input": {
-        "prefix": "stl:i",
-        "body": ["<stl:input", "\tinputName=\"提交表单名称\"", "\tisLoadValues=\"是否载入URL参数\">", "</stl:input>"],
-        "description": "通过 stl:input 标签在模板中实现提交表单功能"
-    },
-    "stl:inputContent": {
-        "prefix": "stl:i",
-        "body": ["<stl:inputContent", "\tellipsis=\"文字超出部分显示的文字\"", "\tformatString=\"显示的格式\"", "\tisClearTags=\"是否清除标签信息\"", "\tisDynamic=\"是否动态显示\"", "\tisLower=\"是否转换为小写\"", "\tisReturnToBr=\"是否将回车替换为HTML换行标签\"", "\tisUpper=\"是否转换为大写\"", "\tleftText=\"显示在信息前的文字\"", "\tlength=\"指定字符长度\"", "\treplace=\"需要替换的文字，可以是正则表达式\"", "\trightText=\"显示在信息后的文字\"", "\tseparator=\"显示多项时的分割字符串\"", "\tstartIndex=\"字符开始位置\"", "\tto=\"替换replace的文字信息\"", "\ttype=\"显示的类型\"", "\twordNum=\"显示字符的数目\">", "</stl:inputContent>"],
-        "description": "通过 stl:inputContent 标签在模板中显示指定表单的提交值"
-    },
-    "stl:inputContents": {
-        "prefix": "stl:i",
-        "body": ["<stl:inputContents", "\talign=\"整体对齐\"", "\tcellPadding=\"填充\"", "\tcellSpacing=\"间距\"", "\tclass=\"Css类\"", "\tcolumns=\"列数\"", "\tdirection=\"方向\"", "\theight=\"整体高度\"", "\tinputName=\"提交表单名称\"", "\tisDynamic=\"是否动态显示\"", "\tisReply=\"是否仅显示已回复内容\"", "\titemAlign=\"项水平对齐\"", "\titemClass=\"项Css类\"", "\titemHeight=\"项高度\"", "\titemVerticalAlign=\"项垂直对齐\"", "\titemWidth=\"项宽度\"", "\tlayout=\"指定列表布局方式\"", "\torder=\"排序\"", "\tstartNum=\"从第几条信息开始显示\"", "\ttotalNum=\"显示内容数目\"", "\twhere=\"获取内容列表的条件判断\"", "\twidth=\"整体宽度\">", "</stl:inputContents>"],
-        "description": "通过 stl:inputContents 标签在模板中显示提交表单列表"
-    },
-    "stl:comments": {
-        "prefix": "stl:c",
-        "body": ["<stl:comments", "\talign=\"整体对齐\"", "\tcellPadding=\"填充\"", "\tcellSpacing=\"间距\"", "\tclass=\"Css类\"", "\tcolumns=\"列数\"", "\tdirection=\"方向\"", "\theight=\"整体高度\"", "\tisDynamic=\"是否动态显示\"", "\titemAlign=\"项水平对齐\"", "\titemClass=\"项Css类\"", "\titemHeight=\"项高度\"", "\titemVerticalAlign=\"项垂直对齐\"", "\titemWidth=\"项宽度\"", "\tlayout=\"指定列表布局方式\"", "\torder=\"排序\"", "\tstartNum=\"从第几条信息开始显示\"", "\ttotalNum=\"显示内容数目\"", "\twhere=\"获取评论列表的条件判断\"", "\twidth=\"整体宽度\">", "</stl:comments>"],
-        "description": "通过 stl:comments 标签在模板中显示评论列表"
-    },
-    "stl:comment": {
-        "prefix": "stl:c",
-        "body": ["<stl:comment", "\tellipsis=\"文字超出部分显示的文字\"", "\tformatString=\"显示的格式\"", "\tisClearTags=\"是否清除标签信息\"", "\tisDynamic=\"是否动态显示\"", "\tisLower=\"是否转换为小写\"", "\tisReturnToBr=\"是否将回车替换为HTML换行标签\"", "\tisUpper=\"是否转换为大写\"", "\tleftText=\"显示在信息前的文字\"", "\tlength=\"指定字符长度\"", "\treplace=\"需要替换的文字，可以是正则表达式\"", "\trightText=\"显示在信息后的文字\"", "\tstartIndex=\"字符开始位置\"", "\tto=\"替换replace的文字信息\"", "\ttype=\"显示的类型\"", "\twordNum=\"显示字符的数目\">", "</stl:comment>"],
-        "description": "通过 stl:comment 标签在模板中显示评论的属性值"
-    },
-    "stl:commentInput": {
-        "prefix": "stl:c",
-        "body": ["<stl:commentInput", "\tisAnonymous=\"是否允许匿名评论\"", "\tpageNum=\"每页显示的评论数目\">", "</stl:commentInput>"],
-        "description": "通过 stl:commentInput 标签在模板中实现评论提交及显示功能"
-    },
-    "stl:search": {
-        "prefix": "stl:s",
-        "body": ["<stl:search", "\tchannelIds=\"栏目Id列表\"", "\tchannelIndex=\"栏目索引\"", "\tchannelName=\"栏目名称\"", "\tdateAttribute=\"搜索时间字段\"", "\tdateFrom=\"搜索开始时间\"", "\tdateTo=\"搜索结束时间\"", "\tisDefaultDisplay=\"是否默认显示\"", "\tisHighlight=\"是否关键字高亮\"", "\tpageNum=\"每页显示的内容数目\"", "\tsince=\"搜索时间段\"", "\tsiteDir=\"站点文件夹\"", "\tsiteIds=\"站点Id列表\"", "\tsiteName=\"站点名称\"", "\ttype=\"搜索类型\"", "\tword=\"搜索关键词\">", "</stl:search>"],
-        "description": "通过 stl:search 标签在模板中显示搜索结果"
-    },
-    "stl:digg": {
-        "prefix": "stl:d",
-        "body": ["<stl:digg", "\tbadText=\"不赞同文字\"", "\tgoodText=\"赞同文字\"", "\tisDynamic=\"是否动态显示\"", "\tisNumber=\"仅显示结果数字\"", "\ttheme=\"主题样式\"", "\ttype=\"类型\">", "</stl:digg>"],
-        "description": "通过 stl:digg 标签在模板中实现赞同/不赞同、投个鲜花/扔个鸡蛋、顶一下/踩一下等功能"
-    },
-    "stl:resume": {
-        "prefix": "stl:r",
-        "body": ["<stl:resume", "\tstyleName=\"样式名称\">", "</stl:resume>"],
-        "description": "通过 stl:resume 标签在模板中实现提交简历功能"
-    },
-    "stl:star": {
-        "prefix": "stl:s",
-        "body": ["<stl:star", "\tfailureMessage=\"评分失败提示信息\"", "\tinitStar=\"初始评分\"", "\tisDynamic=\"是否动态显示\"", "\tisTextOnly=\"仅显示评分数\"", "\tsuccessMessage=\"评分成功提示信息\"", "\ttheme=\"主题样式\"", "\ttotalStar=\"最高评分\">", "</stl:star>"],
-        "description": "通过 stl:star 标签在模板中显示评分功能"
-    },
-    "stl:vote": {
-        "prefix": "stl:v",
-        "body": ["<stl:vote", "\tisDynamic=\"是否动态显示\">", "</stl:vote>"],
-        "description": "通过 stl:vote 标签在模板中实现投票功能"
-    },
-    "stl:include": {
-        "prefix": "stl:i",
-        "body": ["<stl:include", "\tfile=\"文件路径\"", "\tisContext=\"是否STL解析与当前页面上下文相关\"", "\tisDynamic=\"是否动态显示\">", "</stl:include>"],
-        "description": "通过 stl:include 标签在模板中包含另一个文件，作为模板的一部分"
-    },
-    "stl:dynamic": {
-        "prefix": "stl:d",
-        "body": ["<stl:dynamic", "\tcontext=\"所处上下文\"", "\tisPageRefresh=\"翻页时是否刷新页面\">", "</stl:dynamic>"],
-        "description": "通过 stl:dynamic 标签在模板中实现动态显示功能"
-    },
-    "stl:each": {
-        "prefix": "stl:e",
-        "body": ["<stl:each", "\talign=\"整体对齐\"", "\tcellPadding=\"填充\"", "\tcellSpacing=\"间距\"", "\tclass=\"Css类\"", "\tcolumns=\"列数\"", "\tdirection=\"方向\"", "\theight=\"整体高度\"", "\tisDynamic=\"是否动态显示\"", "\titemAlign=\"项水平对齐\"", "\titemClass=\"项Css类\"", "\titemHeight=\"项高度\"", "\titemVerticalAlign=\"项垂直对齐\"", "\titemWidth=\"项宽度\"", "\tlayout=\"指定列表布局方式\"", "\torder=\"排序\"", "\tstartNum=\"从第几条信息开始显示\"", "\ttotalNum=\"显示信息数目\"", "\ttype=\"循环类型\"", "\twidth=\"整体宽度\">", "</stl:each>"],
-        "description": "通过 stl:each 标签在模板中遍历指定的列表项"
-    },
-    "stl:value": {
-        "prefix": "stl:v",
-        "body": ["<stl:value", "\tellipsis=\"文字超出部分显示的文字\"", "\tformatString=\"显示的格式\"", "\tisClearTags=\"是否清除标签信息\"", "\tisDynamic=\"是否动态显示\"", "\tisLower=\"是否转换为小写\"", "\tisReturnToBr=\"是否将回车替换为HTML换行标签\"", "\tisUpper=\"是否转换为大写\"", "\tlength=\"指定字符长度\"", "\treplace=\"需要替换的文字，可以是正则表达式\"", "\tseparator=\"显示多项时的分割字符串\"", "\tstartIndex=\"字符开始位置\"", "\tto=\"替换replace的文字信息\"", "\ttype=\"类型\"", "\twordNum=\"显示字符的数目\">", "</stl:value>"],
-        "description": "通过 stl:value 标签在模板中获取值"
-    },
-    "stl:count": {
-        "prefix": "stl:c",
-        "body": ["<stl:count", "\tchannelIndex=\"栏目索引\"", "\tchannelName=\"栏目名称\"", "\tisDynamic=\"是否动态显示\"", "\tscope=\"内容范围\"", "\tsince=\"时间段\"", "\ttopLevel=\"从首页向下的栏目级别\"", "\ttype=\"需要获取值的类型\"", "\tupLevel=\"上级栏目的级别\">", "</stl:count>"],
-        "description": "通过 stl:count 标签在模板中显示统计数字"
-    },
-    "stl:marquee": {
-        "prefix": "stl:m",
-        "body": ["<stl:marquee", "\tdirection=\"滚动方向\"", "\theight=\"高度\"", "\tisDynamic=\"是否动态显示\"", "\tscrollDelay=\"滚动延迟时间（毫秒）\"", "\twidth=\"宽度\">", "</stl:marquee>"],
-        "description": "通过 stl:marquee 标签在模板中创建一个能够无间隔滚动的内容块"
-    },
-    "stl:select": {
-        "prefix": "stl:s",
-        "body": ["<stl:select", "\tchannelIndex=\"栏目索引\"", "\tchannelName=\"栏目名称\"", "\tgroupChannel=\"指定显示的栏目组\"", "\tgroupChannelNot=\"指定不显示的栏目组\"", "\tgroupContent=\"指定显示的内容组\"", "\tgroupContentNot=\"指定不显示的内容组\"", "\tisChannel=\"是否显示栏目下拉列表\"", "\tisColor=\"仅显示醒目内容\"", "\tisDynamic=\"是否动态显示\"", "\tisHot=\"仅显示热点内容\"", "\tisRecommend=\"仅显示推荐内容\"", "\tisTop=\"仅显示置顶内容\"", "\topenWin=\"选择是否新窗口打开链接\"", "\torder=\"排序\"", "\tqueryString=\"链接参数\"", "\tscope=\"选择的范围\"", "\ttags=\"指定标签\"", "\ttitle=\"下拉列表提示标题\"", "\ttitleWordNum=\"标题文字数量\"", "\ttopLevel=\"从首页向下的栏目级别\"", "\ttotalNum=\"显示数目\"", "\tupLevel=\"上级栏目的级别\"", "\twhere=\"获取下拉列表的条件判断\">", "</stl:select>"],
-        "description": "通过 stl:select 标签在模板中显示栏目或内容下拉列表"
-    },
-    "stl:analysis": {
-        "prefix": "stl:a",
-        "body": ["<stl:analysis", "\taddNum=\"添加数目\"", "\tchannelIndex=\"栏目索引\"", "\tchannelName=\"栏目名称\"", "\tisAverage=\"是否显示日均量\"", "\tisDynamic=\"是否动态显示\"", "\tscope=\"统计范围\"", "\tsince=\"时间段\"", "\tstyle=\"显示样式\"", "\ttype=\"统计类型\">", "</stl:analysis>"],
-        "description": "通过 stl:analysis 标签在模板中显示页面的浏览量及点击次数、点击率"
-    },
-    "stl:tabs": {
-        "prefix": "stl:t",
-        "body": ["<stl:tabs", "\taction=\"页签切换方式\"", "\tclassActive=\"当前显示页签头部的CSS类\"", "\tclassNormal=\"当前隐藏页签头部的CSS类\"", "\tcurrent=\"当前页签\"", "\tisDynamic=\"是否动态显示\"", "\tisHeader=\"是否为页签头部\"", "\ttabName=\"页签名称\">", "</stl:tabs>"],
-        "description": "通过 stl:tabs 标签在模板中显示页签切换"
-    },
-    "stl:zoom": {
-        "prefix": "stl:z",
-        "body": ["<stl:zoom", "\tfontSize=\"缩放字体大小\"", "\tisDynamic=\"是否动态显示\"", "\tzoomId=\"页面HTML中缩放对象的ID属性\">", "</stl:zoom>"],
-        "description": "通过 stl:zoom 标签在模板中实现文字缩放功能"
-    },
-    "stl:printer": {
-        "prefix": "stl:p",
-        "body": ["<stl:printer", "\tbodyId=\"页面HTML中打印正文的ID属性\"", "\tisDynamic=\"是否动态显示\"", "\tlocationId=\"页面当前位置的ID属性\"", "\tlogoId=\"页面LOGO的ID属性\"", "\ttitleId=\"页面HTML中打印标题的ID属性\">", "</stl:printer>"],
-        "description": "通过 stl:printer 标签在模板中实现打印功能"
+        "body": [
+            "<stl:a",
+            "\tchannelIndex=\"栏目索引\"",
+            "\tchannelName=\"栏目名称\"",
+            "\tparent=\"展示父栏目\"",
+            "\tupLevel=\"上级栏目的级别\"",
+            "\ttopLevel=\"从首页向下的栏目级别\"",
+            "\tcontext=\"所处上下文\"",
+            "\thref=\"链接地址\"",
+            "\thost=\"链接域名\"",
+            "\tqueryString=\"链接参数\">",
+            "</stl:a>"
+        ],
+        "description": "\r\n<stl:a> 元素可以创建一个到其他站点、栏目以及内容页或任何其他URL地址的超链接。\r\n\r\n标签 <stl:a> 在栏目模版中默认展示此栏目的链接，在内容模版中默认展示此内容的链接，如果希望展示指定栏目的链接，请设置 [上下文切换] 属性。\r\n\r\n如果标签嵌入在列表标签内，则默认链接地址当前列表项的链接：\r\n\r\n <stl:a> 标签能够作为 <stl:channels> 等标签的子标签，当作为 <stl:channels> 的子标签使用时将展示栏目链接。\r\n <stl:a> 标签能够作为 <stl:contents> 等标签的子标签，当作为 <stl:contents> 的子标签使用时将展示内容链接。\r\n\r\n可以把任何 STL 标签或者 HTML 标签嵌套在 <stl:a> 元素内，如果<stl:a> 元素内没有嵌套任何标签，系统将把对应的栏目或者内容的名称作为嵌套文本显示出来。\r\n\r\n"
     },
     "stl:action": {
-        "prefix": "stl:a",
-        "body": ["<stl:action", "\tisDynamic=\"是否动态显示\"", "\treturnUrl=\"动作完成后的返回地址\"", "\ttype=\"动作类型\">", "</stl:action>"],
-        "description": "通过 stl:action 标签在模板中创建链接，点击链接后将执行相应的动作"
+        "prefix": "stl:action",
+        "body": [
+            "<stl:action",
+            "\ttype=\"动作类型\">",
+            "</stl:action>"
+        ],
+        "description": "\r\n通过 <stl:action> 标签在模板中创建链接，点击链接后页面将执行相应的动作。\r\n\r\n标签 <stl:action> 所执行的动作由属性 type 指定：\r\n\r\n `\"Close\"` 执行关闭本页功能。\r\n `\"Translate\"` 执行整个站点的简体/繁体文字转换功能。\r\n\r\n可以把任何 STL 标签或者 HTML 标签嵌套在 <stl:action> 元素内。\r\n\r\n"
     },
-    "stl:tags": {
-        "prefix": "stl:t",
-        "body": ["<stl:tags", "\tcontext=\"所处上下文\"", "\tisDynamic=\"是否动态显示\"", "\tisOrderByCount=\"是否按引用次数排序\"", "\ttagLevel=\"标签级别\"", "\ttheme=\"主题样式\"", "\ttotalNum=\"显示标签数目\">", "</stl:tags>"],
-        "description": "通过 stl:tags 标签在模板中显示内容标签"
+    "stl:audio": {
+        "prefix": "stl:audio",
+        "body": [
+            "<stl:audio",
+            "\ttype=\"指定存储音频地址的内容字段，默认为VideoUrl\"",
+            "\tplayUrl=\"音频地址，优先级高于type属性\"",
+            "\tisAutoPlay=\"是否自动播放\"",
+            "\tisPreload=\"是否预载入\"",
+            "\tisLoop=\"是否循环播放\">",
+            "</stl:audio>"
+        ],
+        "description": "\r\n通过 stl:audio 标签在模板中展示并播放音频文件。\r\n\r\nstl:audio 标签为HTML5标签，最终将解析为HTML5标签<audio>，需要兼容 IE8 等低版本浏览器时请谨慎使用此标签。\r\n\r\nstl:audio 标签的音频地址取自内容的音频字段（videoUrl），可以通过type属性指定其他字段。同时也可以直接使用playUrl属性指定具体的音频播放地址。\r\n\r\n标签 <stl:audio> 在内容模版中默认展示此内容的音频。\r\n\r\nstl:audio 标签能够作为 <stl:contents> 等标签的子标签，当作为 <stl:contents> 的子标签使用时将展示内容的音频。\r\n\r\n"
     },
-    "stl:rss": {
-        "prefix": "stl:r",
-        "body": ["<stl:rss", "\tchannelIndex=\"栏目索引\"", "\tchannelName=\"栏目名称\"", "\tdescription=\"Rss订阅摘要\"", "\tgroupChannel=\"指定显示的栏目组\"", "\tgroupChannelNot=\"指定不显示的栏目组\"", "\tgroupContent=\"指定显示的内容组\"", "\tgroupContentNot=\"指定不显示的内容组\"", "\tisColor=\"仅显示醒目内容\"", "\tisHot=\"仅显示热点内容\"", "\tisRecommend=\"仅显示推荐内容\"", "\tisTop=\"仅显示置顶内容\"", "\torder=\"排序\"", "\tscope=\"内容范围\"", "\tstartNum=\"从第几条信息开始显示\"", "\ttags=\"指定标签\"", "\ttitle=\"Rss订阅标题\"", "\ttotalNum=\"显示内容数目\">", "</stl:rss>"],
-        "description": "通过 stl:rss 标签在模板中生成Rss阅读器能够浏览的Rss订阅"
+    "stl:channel": {
+        "prefix": "stl:channel",
+        "body": [
+            "<stl:channel",
+            "\ttype=\"展示的类型\"",
+            "\tchannelIndex=\"栏目索引\"",
+            "\tchannelName=\"栏目名称\"",
+            "\tparent=\"展示父栏目属性\"",
+            "\tupLevel=\"上级栏目的级别\"",
+            "\ttopLevel=\"从首页向下的栏目级别\"",
+            "\tleftText=\"展示在信息前的文字\"",
+            "\trightText=\"展示在信息后的文字\"",
+            "\tformatString=\"展示的格式\"",
+            "\tseparator=\"展示多项时的分割字符串\"",
+            "\tstartIndex=\"字符开始位置\"",
+            "\tlength=\"指定字符长度\"",
+            "\twordNum=\"展示字符的数目\"",
+            "\tellipsis=\"文字超出部分展示的文字\"",
+            "\treplace=\"需要替换的文字，可以是正则表达式\"",
+            "\tto=\"替换replace的文字信息\"",
+            "\tisClearTags=\"是否清除HTML标签\"",
+            "\tisReturnToBr=\"是否将回车替换为HTML换行标签\"",
+            "\tisLower=\"是否转换为小写\"",
+            "\tisUpper=\"是否转换为大写\">",
+            "</stl:channel>"
+        ],
+        "description": "\r\n通过 stl:channel 标签在模板中展示指定栏目的属性值。\r\n\r\n<stl:channel> 标签单独使用时，系统默认将展示当前栏目的值，如果希望展示指定栏目的值，请设置 [上下文切换] 属性。\r\n\r\n如果 <stl:channel> 标签嵌套在 <stl:channels>以及<stl:pageChannels> 栏目列表标签内，系统将获取栏目列表项并解析为相应的值。\r\n\r\ntype 属性用于明确需要展示栏目的具体字段，如果未设置，系统将展示栏目名称。\r\n\r\n如果需要对返回的文字进行截字或者其他处理，请设置 [展示文字] 属性。\r\n\r\n如果需要展示日期/时间类型的栏目字段，可以通过 formatString 属性 [格式化日期]。\r\n\r\n如果希望将栏目的属性值放到 HTML 元素或者 STL 元素的属性中使用，请使用{stl:channel} 实体写法，如：`<a title=\"{stl:channel type=title}\">`。\r\n\r\n如果需要获取栏目正文并翻页展示，请设置type属性为 `pageContent`，同时配合 stl:pageItem 标签实现翻页效果。\r\n\r\n"
     },
-    "stl:ad": {
-        "prefix": "stl:a",
-        "body": ["<stl:ad", "\tarea=\"广告位\">", "</stl:ad>"],
-        "description": "通过 stl:ad 标签在模板中显示指定位置的广告"
-    },
-    "stl:sites": {
-        "prefix": "stl:s",
-        "body": ["<stl:sites", "\talign=\"整体对齐\"", "\tcellPadding=\"填充\"", "\tcellSpacing=\"间距\"", "\tclass=\"Css类\"", "\tcolumns=\"列数\"", "\tdirection=\"方向\"", "\theight=\"整体高度\"", "\tisDynamic=\"是否动态显示\"", "\titemAlign=\"项水平对齐\"", "\titemClass=\"项Css类\"", "\titemHeight=\"项高度\"", "\titemVerticalAlign=\"项垂直对齐\"", "\titemWidth=\"项宽度\"", "\tlayout=\"指定列表布局方式\"", "\torder=\"排序\"", "\tscope=\"范围\"", "\tsince=\"时间段\"", "\tsiteName=\"站点名称\"", "\tsiteDir=\"站点文件夹\"", "\tstartNum=\"从第几条信息开始显示\"", "\ttotalNum=\"显示内容数目\"", "\twhere=\"获取站点列表的条件判断\"", "\twidth=\"整体宽度\">", "</stl:sites>"],
-        "description": "通过 stl:sites 标签在模板中显示站点列表"
-    },
-    "stl:site": {
-        "prefix": "stl:s",
-        "body": ["<stl:site", "\tisDynamic=\"是否动态显示\"", "\tsiteName=\"站点名称\"", "\tsiteDir=\"站点文件夹\">", "</stl:site>"],
-        "description": "通过 stl:site 标签在模板中显示站点值"
+    "stl:channels": {
+        "prefix": "stl:channels",
+        "body": [
+            "<stl:channels",
+            "\tisTotal=\"是否从所有栏目中选择\"",
+            "\tisAllChildren=\"是否展示所有级别的子栏目\"",
+            "\tchannelIndex=\"栏目索引\"",
+            "\tchannelName=\"栏目名称\"",
+            "\tupLevel=\"上级栏目的级别\"",
+            "\ttopLevel=\"从首页向下的栏目级别\"",
+            "\tgroupChannel=\"指定展示的栏目组\"",
+            "\tgroupChannelNot=\"指定不展示的栏目组\"",
+            "\ttotalNum=\"展示内容数目\"",
+            "\tstartNum=\"从第几条信息开始展示\"",
+            "\torder=\"排序\"",
+            "\twhere=\"获取内容列表的条件判断\"",
+            "\tcolumns=\"列数\"",
+            "\tdirection=\"方向\"",
+            "\theight=\"指定列表布局方式\"",
+            "\twidth=\"整体高度\"",
+            "\talign=\"整体宽度\"",
+            "\titemHeight=\"整体对齐\"",
+            "\titemWidth=\"项高度\"",
+            "\titemAlign=\"项宽度\"",
+            "\titemVerticalAlign=\"项水平对齐\"",
+            "\titemClass=\"项垂直对齐\"",
+            "\tlayout=\"项Css类\">",
+            "</stl:channels>"
+        ],
+        "description": "\r\n通过 stl:channels 标签在模板中展示栏目列表。\r\n\r\n<stl:channels> 元素默认展示当前栏目的下级栏目列表，如果希望展示指定栏目的子栏目，请设置 [上下文切换] 属性。\r\n\r\n如果需要将 <stl:channels> 元素解析为 [HTML <table>]标签，或者需要对列表循环项进行处理，请设置列表属性或标签 [控制列表展示]。\r\n\r\n<stl:channels> 元素默认展示下一级栏目的列表，如果希望展示所有的下级栏目（包括子栏目和子子栏目），请设置属性 isAllChildren为 true。\r\n\r\n可以通过 groupChannel 属性及 groupChannelNot 属性筛选出特定的栏目并进行展示。\r\n\r\n"
     },
     "stl:container": {
-        "prefix": "stl:c",
-        "body": ["<stl:container", "\tcontext=\"所处上下文\">", "</stl:container>"],
-        "description": "通过 stl:container 标签在模板中定义容器，切换上下文"
+        "prefix": "stl:container",
+        "body": [
+            "<stl:container",
+            "\tchannelIndex=\"栏目索引\"",
+            "\tchannelName=\"栏目名称\"",
+            "\tparent=\"父栏目\"",
+            "\tupLevel=\"上级栏目的级别\"",
+            "\ttopLevel=\"从首页向下的栏目级别\"",
+            "\tcontext=\"所处上下文\">",
+            "</stl:container>"
+        ],
+        "description": "\r\n通过 stl:container 标签在模板中定义容器，切换上下文。\r\n\r\n上下文是指系统解析 StL 标签时的默认数据，详情请参考[切换上下文]。\r\n\r\n<stl:container> 标签需要嵌套 HTML 标签或者 STL 标签，否则系统将忽略此标签。\r\n\r\n"
     },
-    "stl.PoweredBy": { "prefix": "stl.P", "body": ["{stl.PoweredBy}"], "description": "通过{stl.PoweredBy}实体在模板中显示PoweredBy 链接" },
-    "stl.SiteName": { "prefix": "stl.S", "body": ["{stl.SiteName}"], "description": "通过{stl.SiteName}实体在模板中显示站点名称" },
-    "stl.SiteId": { "prefix": "stl.S", "body": ["{stl.SiteId}"], "description": "通过{stl.SiteId}实体在模板中显示站点Id" },
-    "stl.SiteDir": { "prefix": "stl.S", "body": ["{stl.SiteDir}"], "description": "通过{stl.SiteDir}实体在模板中显示站点文件夹，如果为总站点，值为空" },
-    "stl.SiteUrl": { "prefix": "stl.S", "body": ["{stl.SiteUrl}"], "description": "通过{stl.SiteUrl}实体在模板中显示站点根目录地址" },
-    "stl.RootUrl": { "prefix": "stl.R", "body": ["{stl.RootUrl}"], "description": "通过{stl.RootUrl}实体在模板中显示系统根目录地址" },
-    "stl.CurrentUrl": { "prefix": "stl.C", "body": ["{stl.CurrentUrl}"], "description": "通过{stl.CurrentUrl}实体在模板中显示当前页地址" },
-    "stl.ChannelUrl": { "prefix": "stl.C", "body": ["{stl.ChannelUrl}"], "description": "通过{stl.ChannelUrl}实体在模板中显示栏目页地址" },
-    "channel.ChannelId": { "prefix": "chann", "body": ["{channel.ChannelId}"], "description": "通过{channel.ChannelId}实体在模板中显示栏目Id" },
-    "channel.Title": { "prefix": "chann", "body": ["{channel.Title}"], "description": "通过{channel.Title}实体在模板中显示栏目名称" },
-    "channel.ChannelIndex": { "prefix": "chann", "body": ["{channel.ChannelIndex}"], "description": "通过{channel.ChannelIndex}实体在模板中显示栏目索引" },
-    "channel.Content": { "prefix": "chann", "body": ["{channel.Content}"], "description": "通过{channel.Content}实体在模板中显示栏目正文" },
-    "channel.NavigationUrl": { "prefix": "chann", "body": ["{channel.NavigationUrl}"], "description": "通过{channel.NavigationUrl}实体在模板中显示栏目链接地址" },
-    "channel.ImageUrl": { "prefix": "chann", "body": ["{channel.ImageUrl}"], "description": "通过{channel.ImageUrl}实体在模板中显示栏目图片地址" },
-    "channel.AddDate": { "prefix": "chann", "body": ["{channel.AddDate}"], "description": "通过{channel.AddDate}实体在模板中显示栏目添加日期" },
-    "channel.DirectoryName": { "prefix": "chann", "body": ["{channel.DirectoryName}"], "description": "通过{channel.DirectoryName}实体在模板中显示生成文件夹名称" },
-    "channel.Group": { "prefix": "chann", "body": ["{channel.Group}"], "description": "通过{channel.Group}实体在模板中显示栏目组别" },
-    "channel.ItemIndex": { "prefix": "chann", "body": ["{channel.ItemIndex}"], "description": "通过{channel.ItemIndex}实体在模板中显示栏目排序" },
-    "channel.Keywords": { "prefix": "chann", "body": ["{channel.Keywords}"], "description": "通过{channel.Keywords}实体在模板中显示关键字" },
-    "channel.Description": { "prefix": "chann", "body": ["{channel.Description}"], "description": "通过{channel.Description}实体在模板中显示页面描述" },
-    "content.Id": { "prefix": "conte", "body": ["{content.Id}"], "description": "通过{content.Id}实体在模板中显示内容Id" },
-    "content.Title": { "prefix": "conte", "body": ["{content.Title}"], "description": "通过{content.Title}实体在模板中显示内容标题" },
-    "content.FullTitle": { "prefix": "conte", "body": ["{content.FullTitle}"], "description": "通过{content.FullTitle}实体在模板中显示内容标题全称" },
-    "content.Content": { "prefix": "conte", "body": ["{content.Content}"], "description": "通过{content.Content}实体在模板中显示内容正文" },
-    "content.NavigationUrl": { "prefix": "conte", "body": ["{content.NavigationUrl}"], "description": "通过{content.NavigationUrl}实体在模板中显示内容链接地址" },
-    "content.ImageUrl": { "prefix": "conte", "body": ["{content.ImageUrl}"], "description": "通过{content.ImageUrl}实体在模板中显示内容图片地址" },
-    "content.FileUrl": { "prefix": "conte", "body": ["{content.FileUrl}"], "description": "通过{content.FileUrl}实体在模板中显示内容附件地址" },
-    "content.DownloadUrl": { "prefix": "conte", "body": ["{content.DownloadUrl}"], "description": "通过{content.DownloadUrl}实体在模板中显示内容附件地址(可统计下载量)" },
-    "content.AddDate": { "prefix": "conte", "body": ["{content.AddDate}"], "description": "通过{content.AddDate}实体在模板中显示内容添加日期" },
-    "content.LastEditDate": { "prefix": "conte", "body": ["{content.LastEditDate}"], "description": "通过{content.LastEditDate}实体在模板中显示内容最后修改日期" },
-    "content.Group": { "prefix": "conte", "body": ["{content.Group}"], "description": "通过{content.Group}实体在模板中显示内容组别" },
-    "content.Tags": { "prefix": "conte", "body": ["{content.Tags}"], "description": "通过{content.Tags}实体在模板中显示内容标签" },
-    "content.AddUserName": { "prefix": "conte", "body": ["{content.AddUserName}"], "description": "通过{content.AddUserName}实体在模板中显示内容添加人" },
-    "content.ItemIndex": { "prefix": "conte", "body": ["{content.ItemIndex}"], "description": "通过{content.ItemIndex}实体在模板中显示内容排序" },
-    "comment.Reference": { "prefix": "comme", "body": ["{comment.Reference}"], "description": "通过{comment.Reference}实体在模板中显示引用" },
-    "comment.DiggGood": { "prefix": "comme", "body": ["{comment.DiggGood}"], "description": "通过{comment.DiggGood}实体在模板中显示支持" },
-    "comment.DiggBad": { "prefix": "comme", "body": ["{comment.DiggBad}"], "description": "通过{comment.DiggBad}实体在模板中显示反对" },
-    "comment.Id": { "prefix": "comme", "body": ["{comment.Id}"], "description": "通过{comment.Id}实体在模板中显示评论Id" },
-    "comment.AddDate": { "prefix": "comme", "body": ["{comment.AddDate}"], "description": "通过{comment.AddDate}实体在模板中显示评论时间" },
-    "comment.UserName": { "prefix": "comme", "body": ["{comment.UserName}"], "description": "通过{comment.UserName}实体在模板中显示评论人" },
-    "comment.IPAddress": { "prefix": "comme", "body": ["{comment.IPAddress}"], "description": "通过{comment.IPAddress}实体在模板中显示IP地址" },
-    "comment.Location": { "prefix": "comme", "body": ["{comment.Location}"], "description": "通过{comment.Location}实体在模板中显示IP所在位置" },
-    "comment.Good": { "prefix": "comme", "body": ["{comment.Good}"], "description": "通过{comment.Good}实体在模板中显示支持数目" },
-    "comment.Bad": { "prefix": "comme", "body": ["{comment.Bad}"], "description": "通过{comment.Bad}实体在模板中显示反对数目" },
-    "comment.Floor": { "prefix": "comme", "body": ["{comment.Floor}"], "description": "通过{comment.Floor}实体在模板中显示楼层" },
-    "comment.Content": { "prefix": "comme", "body": ["{comment.Content}"], "description": "通过{comment.Content}实体在模板中显示评论正文" },
-    "comment.ItemIndex": { "prefix": "comme", "body": ["{comment.ItemIndex}"], "description": "通过{comment.ItemIndex}实体在模板中显示评论排序" },
-    "sql.": {
-        "prefix": "sql.",
-        "body": ["{sql}"],
+    "stl:content": {
+        "prefix": "stl:content",
+        "body": [
+            "<stl:content",
+            "\ttype=\"展示的类型\"",
+            "\tleftText=\"展示在信息前的文字\"",
+            "\trightText=\"展示在信息后的文字\"",
+            "\tformatString=\"展示的格式\"",
+            "\tno=\"展示第几项\"",
+            "\tseparator=\"展示多项时的分割字符串\"",
+            "\tstartIndex=\"字符开始位置\"",
+            "\tlength=\"指定字符长度\"",
+            "\twordNum=\"展示字符的数目\"",
+            "\tellipsis=\"文字超出部分展示的文字\"",
+            "\treplace=\"需要替换的文字，可以是正则表达式\"",
+            "\tto=\"替换replace的文字信息\"",
+            "\tisClearTags=\"是否清除HTML标签\"",
+            "\tisReturnToBr=\"是否将回车替换为HTML换行标签\"",
+            "\tisLower=\"是否转换为小写\"",
+            "\tisUpper=\"是否转换为大写\"",
+            "\tisOriginal=\"如果是引用内容，是否获取所引用内容的值\">",
+            "</stl:content>"
+        ],
+        "description": "\r\n通过 stl:content 标签在模板中展示指定内容的属性值。\r\n\r\n<stl:content> 标签在内容模板中单独使用时，系统默认将展示当前内容的值。\r\n\r\n如果 <stl:content> 标签嵌套在 <stl:contents>以及<stl:pageContents> 内容列表标签内，系统将获取内容列表项并解析为相应的值。\r\n\r\nstl:content 标签只能放在内容模版中或者作为 <stl:contents>以及<stl:pageContents> 等内容列表标签的子标签。\r\n\r\ntype 属性用于明确需要展示内容的具体字段，如果未设置，系统将展示内容标题。\r\n\r\n如果需要对返回的文字进行截字或者其他处理，请设置 [展示文字] 属性。\r\n\r\n如果需要展示日期/时间类型的内容字段，可以通过 formatString 属性 [格式化日期]。\r\n\r\n如果希望将内容的属性值放到 HTML 元素或者 STL 元素的属性中使用，请使用{stl:content} 实体写法，如：`<a title=\"{stl:content type=title}\">`。\r\n\r\n如果需要获取内容正文并翻页展示，请设置type属性为 `pageContent`，同时配合 stl:pageItem 标签实现翻页效果。\r\n\r\n"
+    },
+    "stl:contents": {
+        "prefix": "stl:contents",
+        "body": [
+            "<stl:contents",
+            "\tchannelIndex=\"栏目索引\"",
+            "\tchannelName=\"栏目名称\"",
+            "\tupLevel=\"上级栏目的级别\"",
+            "\ttopLevel=\"从首页向下的栏目级别\"",
+            "\tscope=\"内容范围\"",
+            "\tgroupChannel=\"指定展示的栏目组\"",
+            "\tgroupChannelNot=\"指定不展示的栏目组\"",
+            "\tgroupContent=\"指定展示的内容组\"",
+            "\tgroupContentNot=\"指定不展示的内容组\"",
+            "\ttags=\"指定标签\"",
+            "\tisTop=\"仅展示置顶内容\"",
+            "\tisRecommend=\"仅展示推荐内容\"",
+            "\tisHot=\"仅展示热点内容\"",
+            "\tisColor=\"仅展示醒目内容\"",
+            "\ttotalNum=\"展示内容数目\"",
+            "\tstartNum=\"从第几条信息开始展示\"",
+            "\torder=\"排序\"",
+            "\tisImage=\"仅展示图片内容\"",
+            "\tisVideo=\"仅展示视频内容\"",
+            "\tisFile=\"仅展示附件内容\"",
+            "\tisRelatedContents=\"展示相关内容列表\"",
+            "\twhere=\"获取内容列表的条件判断\"",
+            "\tcolumns=\"列数\"",
+            "\tdirection=\"方向\"",
+            "\theight=\"指定列表布局方式\"",
+            "\twidth=\"整体高度\"",
+            "\talign=\"整体宽度\"",
+            "\titemHeight=\"整体对齐\"",
+            "\titemWidth=\"项高度\"",
+            "\titemAlign=\"项宽度\"",
+            "\titemVerticalAlign=\"项水平对齐\"",
+            "\titemClass=\"项垂直对齐\"",
+            "\tlayout=\"项Css类\">",
+            "</stl:contents>"
+        ],
+        "description": "\r\n通过 stl:contents 标签在模板中展示内容列表。\r\n\r\n<stl:contents> 元素默认展示当前栏目的内容列表，如果希望展示指定栏目的内容列表，请设置 [上下文切换] 属性。\r\n\r\n如果需要将 <stl:contents> 元素解析为 [HTML <table>]标签，或者需要对列表循环项进行处理，请设置列表属性或标签 [控制列表展示]。\r\n\r\n## 筛选\r\n\r\n可以通过 scope 属性控制内容展示的范围，<stl:contents> 元素默认展示当前栏目的内容列表，即 `scope=\"self\"`。\r\n\r\n可以通过 groupChannel 属性及 groupChannelNot 属性筛选出特定栏目下的内容并进行展示。\r\n\r\n可以通过 groupContent 属性及 groupContentNot 属性筛选出属于特定内容组的内容。\r\n\r\n可以通过 isTop、isRecommend、isHot、isColor、isImage、isVideo、isFile 属性筛选出特定类型的内容。\r\n\r\n如果需要在内容页中展示与当前内容相关的内容列表，使用 isRelatedContents=\"true\" 属性，系统将根据标签判断是否相关内容。\r\n\r\n如果以上属性均不适合，可以考虑使用 where 属性，通过 SQL WHERE 语句实现内容筛选。\r\n\r\n"
+    },
+    "stl:count": {
+        "prefix": "stl:count",
+        "body": [
+            "<stl:count",
+            "\ttype=\"需要获取值的类型\"",
+            "\tchannelIndex=\"栏目索引\"",
+            "\tchannelName=\"栏目名称\"",
+            "\tupLevel=\"上级栏目的级别\"",
+            "\ttopLevel=\"从首页向下的栏目级别\"",
+            "\tscope=\"内容范围\"",
+            "\tsince=\"时间段\">",
+            "</stl:count>"
+        ],
+        "description": "\r\n通过 stl:count 标签在模板中展示统计数字\r\n\r\n标签 <stl:count> 用于展示相关数值，如栏目数目、内容数目等。\r\n\r\n属性 channelIndex、channelName、upLevel 以及 topLevel 用于指定统计的栏目，如果不设置默认将统计当前栏目或内容的数据。\r\n属性 scope 用于指定统计范围，默认为仅统计当前栏目或内容的相关数据。\r\n属性 type 用于设置展示数值的类型。\r\n属性 since 用于指定时间段，系统将只展示这段时间内的统计数据。since 属性格式为\"数字+日期符号\"，如\"1y\"、\"3m\"、\"10d\"或\"16h\"，分别代表一年、三个月、十天及十六个小时。\r\n\r\n<stl:count> 标签对应的实体为{stl:count}。\r\n\r\n"
+    },
+    "stl:dynamic": {
+        "prefix": "stl:dynamic",
+        "body": [
+            "<stl:dynamic",
+            "\tcontext=\"所处上下文\"",
+            "\tisPageRefresh=\"翻页时是否刷新页面\"",
+            "\tonBeforeSend=\"动态请求发送前执行的JS代码\"",
+            "\tonSuccess=\"动态请求成功后执行的JS代码\"",
+            "\tonComplete=\"动态请求结束后执行的JS代码\"",
+            "\tonError=\"动态请求失败后执行的JS代码\">",
+            "</stl:dynamic>"
+        ],
+        "description": "\r\n通过 stl:dynamic 标签在模板中实现动态展示功能\r\n\r\n<stl:dynamic> 使用 AJAX 技术使页面中部分区域能够及时反应出变化内容，而不必生成页面后才能展示。\r\n\r\n<stl:dynamic> 标签用于需要即时反应出变化的页面区域，可以将任何代码放置在 <stl:dynamic> 中，页面将展示出最新的内容。\r\n\r\n大部分 STL 标签拥有 isDynamic 属性，如：`<stl:contents isDynamic=\"true\"></stl:contents>`。设置此属性的结果与以下代码一致：`<stl:dynamic><stl:contents></stl:contents><stl:dynamic>`\r\n\r\n<stl:dynamic> 中可以包含任何 STL 标签或 HTML 标签。\r\n\r\n## Js脚本事件\r\n\r\n<stl:dynamic> 标签是由Ajax来实现的，页面通过Js发起动态请求，服务器返回请求结果并展示在页面中。\r\n\r\n动态内容由于通过Ajax加载，会有一定的延迟，我们可以通过定义Ajax事件来进行精确控制。\r\n\r\n这是Ajax事件的完整列表，以及它们被触发的顺序。每个动态请求都会触发事件。\r\n\r\n> Js脚本事件可以是一段可运行的Js代码，也可以是一个Js函数，如果是函数，请在函数名后加以确保函数能够运行。\r\n\r\n### onBeforeSend\r\n\r\n这个事件是在Ajax请求启动之前触发的，它允许你再动态访问之前进行预处理操作。\r\n\r\n在此事件中可以直接调用以下参数：\r\n\r\n containerId：动态加载完毕后将更新的HTML 元素的Id\r\n\r\n### onSuccess\r\n\r\n此事件仅在请求成功时调用。\r\n\r\n在此事件执行完毕后，页面才会更新数据，可以通过 onSuccess 事件对返回的数据进行调整。\r\n\r\n在此事件中可以直接调用以下参数：\r\n\r\n containerId：动态加载完毕后将更新的HTML 元素的Id\r\n data：返回的结果数据\r\n status：返回的 HTTP 状态码\r\n\r\n### onError\r\n\r\n此事件仅在请求发生错误时调用。\r\n\r\n在此事件中可以直接调用以下参数：\r\n\r\n containerId：动态加载完毕后将更新的HTML 元素的Id\r\n err：错误信息\r\n status：返回的 HTTP 状态码\r\n\r\n### onComplete\r\n\r\n不管请求是否成功，都会调用此事件。这个事件是最后触发的，可以通过 onComplete 事件对已更新的页面元素进行调整。\r\n\r\n containerId：动态加载完毕后将更新的HTML 元素的Id\r\n err：错误信息\r\n data：返回的结果数据\r\n status：返回的 HTTP 状态码\r\n\r\n"
+    },
+    "stl:each": {
+        "prefix": "stl:each",
+        "body": [
+            "<stl:each",
+            "\ttype=\"循环类型\"",
+            "\ttotalNum=\"展示内容数目\"",
+            "\tstartNum=\"从第几条信息开始展示\"",
+            "\tcolumns=\"列数\"",
+            "\tdirection=\"方向\"",
+            "\theight=\"指定列表布局方式\"",
+            "\twidth=\"整体高度\"",
+            "\talign=\"整体宽度\"",
+            "\titemHeight=\"整体对齐\"",
+            "\titemWidth=\"项高度\"",
+            "\titemAlign=\"项宽度\"",
+            "\titemVerticalAlign=\"项水平对齐\"",
+            "\titemClass=\"项垂直对齐\"",
+            "\tlayout=\"项Css类\">",
+            "</stl:each>"
+        ],
+        "description": "\r\n通过 stl:each 标签在模板中遍历指定的列表项\r\n\r\ntype类型为ImageUrl时，stl:each的子标签需要包含stl:image标签，以展示图片项。\r\n\r\ntype类型为VideoUrl时，stl:each的子标签需要包含stl:player标签或者stl:video标签，以展示视频项。\r\n\r\ntype类型为FileUrl时，stl:each的子标签需要包含stl:file标签，以展示附件项。\r\n\r\n<stl:each> 标签可以作为 <stl:contents> 标签的子标签,也可以放在内容模板中.\r\n\r\n<stl:each> 标签对应的实体为{stl:each}。\r\n\r\n"
+    },
+    "stl:file": {
+        "prefix": "stl:file",
+        "body": [
+            "<stl:file",
+            "\ttype=\"指定存储附件的字段\"",
+            "\tno=\"展示字段的顺序\"",
+            "\tsrc=\"需要下载的文件地址\"",
+            "\tisFileSize=\"展示文件大小\"",
+            "\tisCount=\"是否记录文件下载次数\"",
+            "\tleftText=\"展示在信息前的文字\"",
+            "\trightText=\"展示在信息后的文字\">",
+            "</stl:file>"
+        ],
+        "description": "\r\n通过 stl:file 标签在模板中展示文件下载链接\r\n\r\ntype=\"指定存储附件的字段\"用于明确存储附件的字段。\r\n\r\nstl:file 通常作为 <stl:contents> 内容列表标签的子标签使用或在内容模板中使用，用于展示内容附件的下载链接。\r\n如果指定 src 属性，页面将展示指定文件的下载链接。\r\n如果设置 isCount 属性为 true，系统将统计下载链接的点击次数。\r\nstl:file 标签默认展示内容的附件字段，如果希望展示自定义的附件字段，则需要设置 type 属性。\r\nstl:file 标签内可以嵌入任意代码，如\"下载\"或图片标签，用于展示下载链接；如果没有嵌入内容，系统将展示文件的文件名。\r\n\r\n若附件字段有多个值，可以使用 <stl:each> 遍历所有的附件。\r\n\r\n<stl:file> 标签对应的实体为{stl:file}。\r\n\r\n"
+    },
+    "stl:flash": {
+        "prefix": "stl:flash",
+        "body": [
+            "<stl:flash",
+            "\tchannelIndex=\"栏目索引\"",
+            "\tchannelName=\"栏目名称\"",
+            "\tparent=\"展示父栏目\"",
+            "\tupLevel=\"上级栏目的级别\"",
+            "\ttopLevel=\"从首页向下的栏目级别\"",
+            "\ttype=\"指定存储flash的字段\"",
+            "\tsrc=\"展示的flash地址\"",
+            "\taltSrc=\"当指定的flash不存在时展示的flash地址\"",
+            "\twidth=\"宽度\"",
+            "\theight=\"高度\">",
+            "</stl:flash>"
+        ],
+        "description": "\r\n通过 stl:flash 标签在模板中获取并展示栏目或内容的Flash\r\n\r\nstl:flash 标签的地址取自栏目或内容的图片地址，当图片地址为SWF结尾的flash文件时展示此标签，否则自动转成 <stl:image> 标签。\r\n\r\n标签 在栏目模版中默认展示此栏目的flash，在内容模版中默认展示此内容的flash。\r\n\r\nstl:flash 标签能够作为 <stl:channels> 等标签的子标签，当作为 的子标签使用时将展示栏目的flash。\r\nstl:flash 标签能够作为 <stl:contents> 等标签的子标签，当作为 的子标签使用时将展示内容的flash。\r\n\r\n<stl:flash> 标签对应的实体为{stl:flash}。\r\n\r\n"
+    },
+    "stl:if": {
+        "prefix": "stl:if",
+        "body": [
+            "<stl:if",
+            "\ttype=\"测试类型\"",
+            "\top=\"测试操作\"",
+            "\tvalue=\"测试值\"",
+            "\tcontext=\"所处上下文\">",
+            "</stl:if>"
+        ],
+        "description": "\r\n通过 stl:if 标签在模板中根据条件判断展示内容\r\n\r\nstl:if 通常作为展示的判断条件，如果条件满足则展示，条件不满足则不展示。\r\n\r\nstl:if 标签内可以嵌入任意代码，当条件满足时将展示嵌入的代码。如果需要根据测试是否成功展示不同的结果，需要使用子标签 <stl:yes> 和 <stl:no> ，测试条件成功时将展示 <stl:yes> 中的内容，测试条件失败时将展示 <stl:no> 中的内容。\r\n\r\ntype 属性指定测试类型，如测试栏目名称、模板名称、当前栏目是否属于指定栏目级别等。\r\n\r\n如果需要判断自定义内容属性\"XYZ\"，也可以将type 设置为\" XYZ\"，系统将根据上下文判断栏目或内容的字段\"XYZ\"的值。\r\n\r\nop 属性为测试操作，如是否值等于、不等于、大于、小于、属于等。\r\n\r\nvalue 属性指定测试值，如op=\"Equals\" value=\"123\"（判断指定条件的值是否等于123）。\r\n\r\n如果type为\"AddDate\"或\"LastEditDate\"，value可以采用时间段格式\"数字+日期符号\"，如\"1y\"、\"3m\"或\"10d\"，分别代表一年、三个月及十天内添加或编辑的内容。\r\n\r\n<stl:if> 标签对应的实体为{stl:if}。\r\n\r\n## 子标签\r\n\r\n下表展示此标签所有的子标签。\r\n\r\n| 子标签  | 说明                       |\r\n| ------- | -------------------------- |\r\n| stl:yes | 测试成功展示模板，可以省略 |\r\n| stl:no  | 测试失败展示模板，可以省略 |\r\n\r\n"
+    },
+    "stl:image": {
+        "prefix": "stl:image",
+        "body": [
+            "<stl:image",
+            "\tchannelIndex=\"栏目索引\"",
+            "\tchannelName=\"栏目名称\"",
+            "\tparent=\"展示父栏目\"",
+            "\tupLevel=\"上级栏目的级别\"",
+            "\ttopLevel=\"从首页向下的栏目级别\"",
+            "\ttype=\"指定存储图片的字段\"",
+            "\tno=\"展示字段存储的第几幅图片，默认为",
+            "\t1\"",
+            "\tisOriginal=\"如果是引用内容，是否获取所引用内容的值\"",
+            "\tsrc=\"展示的图片地址\"",
+            "\taltSrc=\"当指定的图片不存在时展示的图片地址\">",
+            "</stl:image>"
+        ],
+        "description": "\r\n通过 stl:image 标签在模板中展示栏目或内容的图片\r\n\r\nstl:image 标签的地址取自栏目或内容的图片地址，当图片地址为SWF结尾时自动转成 <stl:flash> 标签。\r\n\r\n标签 <stl:image> 在栏目模版中默认展示此栏目的图片，在内容模版中默认展示此内容的图片。\r\n\r\nstl:image 标签能够作为 <stl:channels> 等标签的子标签，当作为 的子标签使用时将展示栏目的图片。\r\nstl:image 标签能够作为 <stl:contents> 等标签的子标签，当作为 的子标签使用时将展示内容的图片。\r\n\r\nstl:image 标签默认展示内容的图片字段，如果希望展示自定义的图片字段，则需要设置 type 属性。\r\n\r\n <stl:image> 标签对应的实体为{stl:image}。\r\n\r\n"
+    },
+    "stl:include": {
+        "prefix": "stl:include",
+        "body": [
+            "<stl:include",
+            "\tfile=\"文件路径\">",
+            "</stl:include>"
+        ],
+        "description": "\r\n通过 stl:include 标签在模板中包含另一个文件，作为模板的一部分。\r\n\r\n通常此标签在处理诸如页头、页脚、版权声明等每个页面相同的内容时使用。\r\n\r\n被 <stl:include> 标签包含的文件中可以包含其他 STL 标签或实体。\r\n\r\nstl:include 类似于动态页面中的 <%@ include file=\"header.jsp\" %>包含。\r\nfile是需要包含的文件名，一般以\"~\"或者\"@\"开头，代表系统根目录或站点目录下的文件，如 file=\"@/include/head.html\"，也可以采用 file=\"/include/head.html\"。\r\n\r\nstl:include 标签能够解析包含文件中的 STL 标签或实体。\r\n包含文件可以到\"展示管理\"—\"包含文件管理\"中管理。\r\n\r\n<stl:include> 标签对应的实体为{stl:include}。\r\n\r\n"
+    },
+    "stl:itemTemplate": {
+        "prefix": "stl:itemTemplate",
+        "body": [
+            "<stl:itemTemplate",
+            "\ttype=\"列表项类型\"",
+            "\tselected=\"列表当前选定项类型\"",
+            "\tselectedValue=\"当前选定项的值\">",
+            "</stl:itemTemplate>"
+        ],
+        "description": "\r\n通过 stl:itemTemplate 标签在模板中控制列表中每一项的展示内容及样式\r\n\r\ntype属性为Item、AlternatingItem、Separator三种类型的列表项在列表中最多只能有一个，SelectedItem类型的列表项可以有零个或多个。\r\n\r\nSelectedItem类型的列表项所展示的内容由 selected 属性控制，默认当前内容为选中项。\r\n\r\n<stl:itemTemplate> 标签对应的实体为{stl:itemTemplate}。\r\n\r\n## 上级标签\r\n\r\n<stl:itemTemplate> 标签用于展示列表项，必须嵌套在列表标签中使用，列表标签清单如下：\r\n\r\n| 上级标签                                               | 说明                                                          |\r\n| ------------------------------------------------------ | ------------------------------------------------------------- |\r\n| [stl:channels 栏目列表]                     | 通过 stl:channels 标签在模板中展示栏目列表                    |\r\n| [stl:contents 内容列表]                     | 通过 stl:contents 标签在模板中展示内容列表                    |\r\n| [stl:pageChannels 翻页栏目列表]         | 通过 stl:pageChannels 标签在模板中展示翻页栏目列表            |\r\n| [stl:pageContents 翻页内容列表]         | 通过 stl:pageContents 标签在模板中展示翻页内容列表            |\r\n| [stl:pageSqlContents 翻页数据库列表] | 通过 stl:pageSqlContents 标签在模板中展示能够翻页的数据库列表 |\r\n| [stl:sqlContents 数据库列表]             | 通过 stl:sqlContents 标签在模板中展示数据库列表               |\r\n| [stl:sites 站点列表]                           | 通过 stl:sites 标签在模板中展示站点列表                       |\r\n\r\n"
+    },
+    "stl:loading": {
+        "prefix": "stl:loading",
+        "body": [
+            "<stl:loading>",
+            "</stl:loading>"
+        ],
+        "description": "\r\n通过 stl:loading 标签在模板中创建载入中展示的内容\r\n\r\n<stl:loading> 用于实现在载入中的展示内容及样式，典型的使用场景为 <stl:search> 标签内使用，展示正在搜索的提示。\r\n\r\n<stl:loading> 标签可以包含任何 HTML 标签或 STL 标签。\r\n\r\n<stl:loading> 标签对应的实体为{stl:loading}。\r\n"
+    },
+    "stl:location": {
+        "prefix": "stl:location",
+        "body": [
+            "<stl:location",
+            "\tseparator=\"当前位置分隔符\"",
+            "\ttarget=\"打开窗口的目标\"",
+            "\tlinkClass=\"链接CSS样式\"",
+            "\twordNum=\"链接字数\"",
+            "\tisContainSelf=\"是否包含当前栏目\">",
+            "</stl:location>"
+        ],
+        "description": "\r\n通过 stl:location 标签在模板中插入页面的当前位置。\r\n\r\n标签 <stl:location> 是以分隔符分隔的栏目链接，表示当前页所处的位置。\r\nseparator 属性为栏目之间的分隔符，您也可以把分割字符串放在 <stl:location> 标签之间，作为子标签。\r\n\r\n<stl:location> 标签对应的实体为{stl:location}。\r\n\r\n"
+    },
+    "stl:marquee": {
+        "prefix": "stl:marquee",
+        "body": [
+            "<stl:marquee",
+            "\tscrollDelay=\"滚动延迟时间（毫秒）\"",
+            "\tdirection=\"滚动方向\"",
+            "\twidth=\"宽度\"",
+            "\theight=\"高度\">",
+            "</stl:marquee>"
+        ],
+        "description": "\r\n通过 stl:marquee 标签在模板中创建一个能够无间隔滚动的内容块\r\n\r\n<stl:marquee> 的作用与 HTML 标签 <marquee> 类似，区别在于 <stl:marquee> 能够将滚动的底部和头部连接起来，形成无间隔的滚动。\r\n\r\n<stl:marquee> 标签适合作为滚动的新闻公告等页面标签展示。\r\n\r\n<stl:marquee> 标签对应的实体为{stl:marquee}。\r\n\r\n"
+    },
+    "stl:navigation": {
+        "prefix": "stl:navigation",
+        "body": [
+            "<stl:navigation",
+            "\ttype=\"类型\"",
+            "\temptyText=\"当无内容时展示的信息\"",
+            "\ttipText=\"导航提示信息\"",
+            "\twordNum=\"展示字数\"",
+            "\tisKeyboard=\"是否开启键盘，↑↓←→键分别为上下左右\">",
+            "</stl:navigation>"
+        ],
+        "description": "\r\n通过 stl:navigation 标签在模板中展示链接导航\r\n\r\n展示当前页的前/后一条内容或前/后一条栏目的链接导航。\r\n\r\n标签 <stl:navigation> 用于展示上一条内容/栏目或者下一条内容/栏目的链接。\r\n\r\nstl:navigation 标签内可以嵌入任意代码，当条件满足时将展示嵌入的代码。如果需要根据测试是否成功展示不同的结果，需要使用子标签 <stl:yes> 和 <stl:no> ，测试条件成功时将展示 <stl:yes> 中的内容，测试条件失败时将展示 <stl:no> 中的内容。\r\n\r\n标签 <stl:navigation> 默认类型为下一条内容。可以通过type属性修改导航类型。\r\n\r\n<stl:navigation> 标签对应的实体为{stl:navigation}。\r\n\r\n## 子标签列表\r\n\r\n| 子标签          | 说明                             |\r\n| --------------- | -------------------------------- |\r\n| [stl:yes] | 链接存在时展示的模板，可以省略   |\r\n| [stl:no]   | 链接不存在时展示的模板，可以省略 |\r\n\r\n"
+    },
+    "stl:no": {
+        "prefix": "stl:no",
+        "body": [
+            "<stl:no>",
+            "</stl:no>"
+        ],
+        "description": "\r\n通过 stl:no 标签在模板中展示失败模板\r\n"
+    },
+    "stl:pageChannels": {
+        "prefix": "stl:pageChannels",
+        "body": [
+            "<stl:pageChannels",
+            "\tpageNum=\"每页展示的栏目数目\">",
+            "</stl:pageChannels>"
+        ],
+        "description": "\r\n通过 stl:pageChannels 标签在模板中展示翻页栏目列表\r\n\r\n<stl:pageChannels> 标签需要和STL 标签 <stl:pageItems> 及 <stl:pageItem> 配合使用。\r\n\r\n<stl:pageChannels> 标签和 <stl:channels> 具有相同的属性，这两个标签的区别在于 <stl:pageChannels> 能够翻页，且 <stl:pageChannels> 标签仅能用在栏目模板中。\r\n\r\n通常将STL 标签 <stl:pageItems> 及 <stl:pageItem> 置于 <stl:pageChannels> 标签的下方，代表翻页按钮。\r\n\r\n<stl:pageChannels> 只能在栏目模版中使用，如果需要在其他类型的模版中使用必须将 <stl:pageChannels> 标签和对应的 <stl:pageItems> 翻页标签放到<stl:dynamic> 动态标签中，否则 <stl:pageChannels> 标签将无法解析。\r\n\r\n列表相关介绍请参见列表标签及列表项\r\n\r\n<stl:pageChannels> 标签对应的实体为{stl:pageChannels}。\r\n\r\n"
+    },
+    "stl:pageContents": {
+        "prefix": "stl:pageContents",
+        "body": [
+            "<stl:pageContents",
+            "\tpageNum=\"每页展示的内容数目\"",
+            "\tmaxPage=\"翻页中生成的静态页面最大数，剩余页面将动态获取\">",
+            "</stl:pageContents>"
+        ],
+        "description": "\r\n通过 stl:pageContents 标签在模板中展示翻页内容列表\r\n\r\n<stl:pageContents> 标签需要和 STL 标签 <stl:pageItems> 及 <stl:pageItem> 配合使用。\r\n\r\n所有属于 STL 标签 <stl:contents> 的成员均适用于 <stl:pageChannels> 标签。\r\n\r\n<stl:pageContents> 标签和 <stl:contents> 具有相同的属性，这两个标签的区别在于 <stl:pageContents> 能够翻页，且 <stl:pageContents> 标签仅能用在栏目模板中。\r\n\r\n通常将 STL 标签 <stl:pageItems> 及 <stl:pageItem>\t置于 <stl:pageContents> 标签的下方，代表翻页按钮。\r\n\r\n<stl:pageContents> 只能在栏目模版中使用，如果需要在其他类型的模版中使用必须将 <stl:pageContents> 标签和对应的 <stl:pageItems> 翻页标签放到 <stl:dynamic> 动态标签中，否则 <stl:pageContents> 标签将无法解析。\r\n\r\n列表相关介绍请参见列表标签及列表项\r\n\r\n<stl:pageContents> 标签对应的实体为{stl:pageContents}。\r\n\r\n"
+    },
+    "stl:pageItem": {
+        "prefix": "stl:pageItem",
+        "body": [
+            "<stl:pageItem",
+            "\ttype=\"类型\"",
+            "\ttext=\"展示的文字\"",
+            "\tlinkClass=\"链接CSS样式\"",
+            "\ttextClass=\"文字CSS样式\"",
+            "\tlistNum=\"页导航或页跳转展示链接数\"",
+            "\tlistEllipsis=\"页导航或页跳转链接太多时展示的省略号\"",
+            "\thasLr=\"页码导航是否包含左右字符\"",
+            "\tlStr=\"页面左字符\"",
+            "\trStr=\"页面右字符\"",
+            "\talwaysA=\"页码总是超链接，包括无连接时\">",
+            "</stl:pageItem>"
+        ],
+        "description": "\r\n通过 stl:pageItem 标签在模板中展示翻页项（上一页、下一页、当前页、页跳转、页导航等）\r\n\r\n<stl:pageItem> 标签需要在标签 <stl:pageItems> 内使用。\r\n\r\nstl:pageItem 标签内可以嵌入代码，如果需要根据是否当前页展示不同的样式，需要使用子标签 <stl:yes> 和 <stl:no>，非当前页时将展示 <stl:yes> 中的内容，当前页时将展示 <stl:no> 中的内容。\r\n\r\n<stl:yes> 和 <stl:no> 通常包含 <a> 链接，其中可以包含 {Current.Url} 以及 {Current.Num} 实体，分别代表翻页链接地址及当前页页码。\r\n\r\n当 type 属性为\"FirstPage\"、\" PreviousPage\"、\" NextPage\"、\" LastPage\" 或 \"PageNavigation\" 之一时：\r\n\r\n如果标签内未包含内容，系统将展示默认链接。\r\n如果标签内包含内容，系统将指定的内容，同时将解析内容中包含的 {Current.Url} 及 {Current.Num} 实体。\r\n如果 标签内包含 <stl:yes> 及 <stl:no>，系统将根据是否当前页为对应页展示不同的内容，同时将解析子标签中包含的 {Current.Url} 及 {Current.Num} 实体。\r\n当 type 属性为 \"CurrentPageIndex\" 或 \"TotalPageNum\" 时，翻页项将展示当前页对应的页码及总页数。\r\n当 type 属性为 \"PageSelect\" 时，翻页项将展示翻页跳转下拉框。\r\n\r\n列表相关介绍请参见列表标签及列表项\r\n\r\n<stl:pageItem> 标签对应的实体为{stl:pageItem}。\r\n\r\n## 子标签\r\n\r\n| 子标签          | 说明                                               |\r\n| --------------- | -------------------------------------------------- |\r\n| [stl:yes] | 能够转到对应页面时的展示模板（非当前页），可以省略 |\r\n| [stl:no]   | 不能转到对应页面时的展示模板（当前页），可以省略   |\r\n\r\n"
+    },
+    "stl:pageItems": {
+        "prefix": "stl:pageItems",
+        "body": [
+            "<stl:pageItems",
+            "\tcontext=\"所处上下文\">",
+            "</stl:pageItems>"
+        ],
+        "description": "\r\n通过 stl:pageItems 标签在模板中插入翻页项的容器，当不需要翻页时容器内的内容不展示\r\n\r\n标签 <stl:pageItems> 必须包含标签 <stl:pageItem> 才起作用。\r\n\r\n列表相关介绍请参见列表标签及列表项\r\n\r\n翻页标签可以放到任何类型的模板中使用，唯一的例外是如果在单页模板中使用，需包含在<stl:dynamic>标签中。\r\n\r\n"
+    },
+    "stl:pageSqlContents": {
+        "prefix": "stl:pageSqlContents",
+        "body": [
+            "<stl:pageSqlContents",
+            "\tpageNum=\"每页展示的内容数目\">",
+            "</stl:pageSqlContents>"
+        ],
+        "description": "\r\n通过 stl:pageSqlContents 标签在模板中展示能够翻页的数据库列表\r\n\r\n<stl:pageSqlContents> 标签需要和 STL 标签 <stl:pageItems> 及 <stl:pageItem> 配合使用。\r\n\r\n<stl:pageSqlContents> 标签和 <stl:sqlContents> 具有相同的属性，这两个标签的区别在于 <stl:pageSqlContents> 能够翻页。\r\n\r\n通常将 STL 标签 <stl:pageItems> 及 <stl:pageItem> 置于 <stl:pageSqlContents> 标签的下方，代表翻页按钮。\r\n\r\n列表相关介绍请参见列表标签及列表项\r\n\r\n<stl:pageSqlContents> 标签对应的实体为{stl:pageSqlContents}。\r\n\r\n"
+    },
+    "stl:player": {
+        "prefix": "stl:player",
+        "body": [
+            "<stl:player",
+            "\ttype=\"指定存储媒体的字段\"",
+            "\tplayUrl=\"视频地址\"",
+            "\timageUrl=\"图片地址\"",
+            "\tplayBy=\"指定播放器\"",
+            "\twidth=\"宽度\"",
+            "\theight=\"高度\"",
+            "\tisAutoPlay=\"是否自动播放\">",
+            "</stl:player>"
+        ],
+        "description": "\r\n通过 stl:player 标签在模板中播放视频\r\n\r\n标签 <stl:player> 在栏目模版中默认展示此栏目的视频/音频，在内容模版中默认展示此内容的视频/音频。\r\n\r\nstl:player 标签能够作为 <stl:channels> 等标签的子标签，当作为 <stl:channels> 的子标签使用时将展示栏目的视频/音频。 \r\nstl:player 标签能够作为 <stl:contents> 等标签的子标签，当作为 <stl:contents> 的子标签使用时将展示内容的视频/音频。\r\n\r\n<stl:player> 标签对应的实体为{stl:player}。\r\n\r\n"
+    },
+    "stl:printer": {
+        "prefix": "stl:printer",
+        "body": [
+            "<stl:printer",
+            "\ttitleId=\"页面Html",
+            "\t中打印标题的",
+            "\tId",
+            "\t属性\"",
+            "\tbodyId=\"页面Html",
+            "\t中打印正文的",
+            "\tId",
+            "\t属性\"",
+            "\tlogoId=\"页面Logo",
+            "\t的",
+            "\tId",
+            "\t属性\"",
+            "\tlocationId=\"页面当前位置的",
+            "\tId",
+            "\t属性\">",
+            "</stl:printer>"
+        ],
+        "description": "\r\nstl:printer 用于展示打印链接，点击后弹出打印窗口\r\n\r\n所有属于 HTML 标签 <a> 的成员均适用于 <stl:printer> 标签。\r\n\r\nstl:printer 标签将展示打印链接，点击此链接后将弹出打印窗口，需打印的标题、内容、LOGO及页面当前文字在 <stl:printer> 的属性中指定。\r\n\r\n<stl:printer> 标签对应的实体为{stl:printer}。\r\n\r\n"
+    },
+    "stl:queryString": {
+        "prefix": "stl:queryString",
+        "body": [
+            "<stl:queryString>",
+            "</stl:queryString>"
+        ],
+        "description": "\r\n通过 stl:queryString 标签在模板中定义 SQL 查询语句\r\n\r\n<stl:queryString> 必须作为 <stl:sqlContents> 或者 <stl:pageSqlContents> 的子标签使用。\r\n<stl:queryString> 用于设置数据库查询语句（SQL 语句），在此标签内放置 SQL 语句。\r\n\r\n<stl:queryString> 中定义的 SQL 语句内可以嵌入 STL 语句，如{Channel.ChannelId}当前栏目 Id、{Stl.SiteId}站点 Id 等。\r\n\r\n如果为动态调取（在<stl:dynamic>内部使用），可以采用{Request}实体获取页面地址栏参数，如当前页面地址为“page.html?Id=123”，即可使用{Request.Id}获取值并放到 SQL 语句中作为查询条件。\r\n\r\n<stl:queryString> 标签对应的实体为{stl:queryString}。\r\n"
+    },
+    "stl:rss": {
+        "prefix": "stl:rss",
+        "body": [
+            "<stl:rss",
+            "\tchannelIndex=\"栏目索引\"",
+            "\tchannelName=\"栏目名称\"",
+            "\tscope=\"内容范围\"",
+            "\tgroupChannel=\"指定展示的栏目组\"",
+            "\tgroupChannelNot=\"指定不展示的栏目组\"",
+            "\tgroupContent=\"指定展示的内容组\"",
+            "\tgroupContentNot=\"指定不展示的内容组\"",
+            "\ttags=\"指定标签\"",
+            "\ttitle=\"Rss订阅标题\"",
+            "\tdescription=\"Rss订阅摘要\"",
+            "\ttotalNum=\"展示内容数目\"",
+            "\tstartNum=\"从第几条信息开始展示\"",
+            "\torder=\"排序\"",
+            "\tisTop=\"仅展示置顶内容\"",
+            "\tisRecommend=\"仅展示推荐内容\"",
+            "\tisHot=\"仅展示热点内容\"",
+            "\tisColor=\"仅展示醒目内容\">",
+            "</stl:rss>"
+        ],
+        "description": "\r\n通过 stl:rss 标签在模板中生成Rss阅读器能够浏览的Rss订阅\r\n\r\n<stl:rss> 通常在以 .xml 文件后缀结尾的单页模板中生成，用于 Rss 阅读器订阅栏目下的内容列表信息。\r\n\r\n<stl:rss> 标签对应的实体为{stl:rss}。\r\n\r\n"
+    },
+    "stl:search": {
+        "prefix": "stl:search",
+        "body": [
+            "<stl:search",
+            "\tisAllSites=\"是否对全部站点进行搜索\"",
+            "\tsiteName=\"站点名称\"",
+            "\tsiteDir=\"站点文件夹\"",
+            "\tsiteIds=\"站点Id列表\"",
+            "\tchannelIndex=\"栏目索引\"",
+            "\tchannelName=\"栏目名称\"",
+            "\tchannelIds=\"栏目Id列表\"",
+            "\ttype=\"搜索类型\"",
+            "\tword=\"搜索关键词\"",
+            "\tdateAttribute=\"搜索时间字段\"",
+            "\tdateFrom=\"搜索开始时间\"",
+            "\tdateTo=\"搜索结束时间\"",
+            "\tsince=\"搜索时间段\"",
+            "\tpageNum=\"每页展示的内容数目\"",
+            "\tisHighlight=\"是否关键字高亮\">",
+            "</stl:search>"
+        ],
+        "description": "\r\n通过 stl:search 标签在模板中展示搜索结果\r\n\r\nstl:search 标签有默认展示方式和自定义展示方式两种表现形式。如果 <stl:search> 不包含子标签则采用默认展示方式展示搜索提交表单、如果 <stl:search> 包含子标签则采用自定义的内容展示搜索提交表单。\r\n\r\n<stl:search> 标签对应的实体为{stl:search}。\r\n\r\n## 页面参数\r\n\r\n上表对应的属性均可作为页面参数传递给 <stl:search> 标签，系统将首选页面参数值，如果未传参数，系统再从 <stl:search> 属性取值。\r\n\r\n示例：/utils/search.html?word=中国&type=title&pageNum=10将优先于 <stl:search type=\"title,content\" pageNum=\"20\">。\r\n\r\n## 子标签\r\n\r\n| 子标签                  | 说明                               |\r\n| ----------------------- | ---------------------------------- |\r\n| [stl:loading] | 正在搜索时的展示模板，可以省略     |\r\n| [stl:yes]         | 搜索出内容时的展示模板，可以省略   |\r\n| [stl:no]           | 未搜索出内容时的展示模板，可以省略 |\r\n\r\n如果需要根据是否搜索成功展示不同的结果，需要使用子标签 <stl:yes> 和 <stl:no> ，有搜索结果时将展示 <stl:yes> 中的内容，无搜索结果时将展示 <stl:no> 中的内容。\r\n\r\n如果只定义搜索结果模板，可以省略<stl:yes>，直接将模板放到<stl:search> 中。\r\n\r\n自定义搜索提交表单需要在 <stl:search> 中嵌入展示搜索结果的标签，必须包含的标签有 <stl:pageContents> 和 <stl:pageitems> 及 <stl:pageItem> 标签，分别用于展示搜索结果分页列表和搜索结果翻页项。\r\n\r\n <stl:search> 内必须包含一个 <stl:pageContents> 标签，用于展示搜索结果内容列表，详情请参考 <stl:pageContents> 标签。\r\n <stl:search> 内必须包含一个 <stl:pageitems> 标签和多个 <stl:pageItem> 标签，用于展示翻页项，详情请参考 <stl:pageItems> 标签及 <stl:pageItem> 标签。\r\n <stl:search> 中除以上标签外可以添加任意 Html 标签或 STL 标签，用于组织展示样式。\r\n\r\n"
+    },
+    "stl:select": {
+        "prefix": "stl:select",
+        "body": [
+            "<stl:select",
+            "\tisChannel=\"是否展示栏目下拉列表\"",
+            "\tchannelIndex=\"栏目索引\"",
+            "\tchannelName=\"栏目名称\"",
+            "\tupLevel=\"上级栏目的级别\"",
+            "\ttopLevel=\"从首页向下的栏目级别\"",
+            "\tscope=\"选择的范围\"",
+            "\tgroupChannel=\"指定展示的栏目组\"",
+            "\tgroupChannelNot=\"指定不展示的栏目组\"",
+            "\tgroupContent=\"指定展示的内容组\"",
+            "\tgroupContentNot=\"指定不展示的内容组\"",
+            "\ttags=\"指定标签\"",
+            "\torder=\"排序\"",
+            "\ttotalNum=\"展示数目\"",
+            "\ttitleWordNum=\"标题文字数量\"",
+            "\twhere=\"获取下拉列表的条件判断\"",
+            "\tqueryString=\"链接参数\"",
+            "\tisTop=\"仅展示置顶内容\"",
+            "\tisRecommend=\"仅展示推荐内容\"",
+            "\tisHot=\"仅展示热点内容\"",
+            "\tisColor=\"仅展示醒目内容\"",
+            "\ttitle=\"下拉列表提示标题\"",
+            "\topenWin=\"选择是否新窗口打开链接\">",
+            "</stl:select>"
+        ],
+        "description": "\r\n通过 stl:select 标签在模板中展示栏目或内容下拉列表\r\n\r\nstl:select 用于展示由栏目或内容标题组成的下拉列表，选择下拉列表中的项后页面转到对应的页面。\r\n\r\n所有属于 HTML 标签 <select> 的成员均适用于 <stl:select> 标签。\r\n\r\ntitle 属性代表下拉列表中的第一项，如果未设置此属性，第一项为内容列表第一项的标题。\r\n\r\n如果设置了 channelIndex 属性，系统将寻找对应此栏目索引的栏目并展示此栏目的内容列表。\r\n如果设置了 channelName 属性，系统将寻找对应此栏目名称的栏目并展示此栏目的内容列表。\r\n\r\n<stl:select> 标签对应的实体为{stl:select}。\r\n\r\n"
+    },
+    "stl:site": {
+        "prefix": "stl:site",
+        "body": [
+            "<stl:site",
+            "\tsiteName=\"站点名称\"",
+            "\tsiteDir=\"站点文件夹\"",
+            "\ttype=\"类型\"",
+            "\tformatString=\"展示的格式\"",
+            "\tseparator=\"展示多项时的分割字符串\"",
+            "\tstartIndex=\"字符开始位置\"",
+            "\tlength=\"指定字符长度\"",
+            "\twordNum=\"展示字符的数目\"",
+            "\tellipsis=\"文字超出部分展示的文字\"",
+            "\treplace=\"需要替换的文字，可以是正则表达式\"",
+            "\tto=\"替换replace的文字信息\"",
+            "\tisClearTags=\"是否清除标签信息\"",
+            "\tisReturnToBr=\"是否将回车替换为HTML换行标签\"",
+            "\tisLower=\"是否转换为小写\"",
+            "\tisUpper=\"是否转换为大写\">",
+            "</stl:site>"
+        ],
+        "description": "\r\n通过 stl:site 标签在模板中展示站点值\r\n\r\n<stl:site> 必须包含 siteName 或 siteDir 属性，用于指定站点并展示内容。\r\n\r\n<stl:site> 必须包含子标签，否则将不起作用，系统将找到对应的站点并在对应站点下解析子标签。子标签可以是任意STL标签或HTML标签。\r\n\r\n<stl:site> 标签对应的实体为{stl:site}。\r\n\r\n"
+    },
+    "stl:sites": {
+        "prefix": "stl:sites",
+        "body": [
+            "<stl:sites",
+            "\tsiteName=\"站点名称\"",
+            "\tsiteDir=\"站点文件夹\"",
+            "\ttotalNum=\"展示内容数目\"",
+            "\tstartNum=\"从第几条信息开始展示\"",
+            "\torder=\"排序\"",
+            "\twhere=\"获取内容列表的条件判断\"",
+            "\tcolumns=\"列数\"",
+            "\tdirection=\"方向\"",
+            "\theight=\"指定列表布局方式\"",
+            "\twidth=\"整体高度\"",
+            "\talign=\"整体宽度\"",
+            "\titemHeight=\"整体对齐\"",
+            "\titemWidth=\"项高度\"",
+            "\titemAlign=\"项宽度\"",
+            "\titemVerticalAlign=\"项水平对齐\"",
+            "\titemClass=\"项垂直对齐\"",
+            "\tlayout=\"项Css类\">",
+            "</stl:sites>"
+        ],
+        "description": "\r\n通过 stl:sites 标签在模板中展示站点列表\r\n\r\n标签 <stl:sites> 用于展示网站群中的站点，如果定义siteName或siteDir属性，系统将从对应站点的子站点中选择，否则系统将从所有站点中选择。\r\n\r\n<stl:sites> 必须包含子标签，否则将不起作用，系统将找到对应的站点并在对应站点下解析子标签。子标签可以是任意STL标签或HTML标签。\r\n\r\n属性 order 用于站点列表排序：\r\n\r\n order 不设置或设置为\"Default\"，站点列表将与CMS后台中站点的展示排序一致。\r\n order 设置为\"Contents\"，站点将根据内容数的多少进行排序，如果同时设置since属性，系统将根据对应时间段内添加的内容数量进行排序。\r\n order 设置为\"Hits\"，站点将根据页面点击量的多少进行排序，如果同时设置since属性，系统将根据对应时间段内页面浏览量的数量进行排序。\r\n\r\n<stl:sites> 标签对应的实体为{stl:sites}。\r\n\r\n"
+    },
+    "stl:sqlContent": {
+        "prefix": "stl:sqlContent",
+        "body": [
+            "<stl:sqlContent",
+            "\tconnectionStringName=\"数据库链接字符串名称\"",
+            "\tconnectionString=\"数据库链接字符串\"",
+            "\tqueryString=\"数据库查询语句\"",
+            "\ttype=\"展示的类型\"",
+            "\tleftText=\"展示在信息前的文字\"",
+            "\trightText=\"展示在信息后的文字\"",
+            "\tformatString=\"展示的格式\"",
+            "\tstartIndex=\"字符开始位置\"",
+            "\tlength=\"指定字符长度\"",
+            "\twordNum=\"展示字符的数目\"",
+            "\tellipsis=\"文字超出部分展示的文字\"",
+            "\treplace=\"需要替换的文字，可以是正则表达式\"",
+            "\tto=\"替换replace的文字信息\"",
+            "\tisClearTags=\"是否清除标签信息\"",
+            "\tisReturnToBr=\"是否将回车替换为HTML换行标签\"",
+            "\tisLower=\"是否转换为小写\"",
+            "\tisUpper=\"是否转换为大写\">",
+            "</stl:sqlContent>"
+        ],
+        "description": "\r\n通过 stl:sqlContent 标签在模板中展示数据库值\r\n\r\nstl:sqlContent 标签可以单独使用或者作为 <stl:sqlContents> 等内容列表标签的子标签。\r\nstl:sqlContent 单独使用时需要指定 connectionString 或 connectionStringName 及 queryString 属性。\r\nstl:sqlContent 标签与 STL 数据库实体的作用基本相同，stl:sqlContent 可以控制展示的字数及格式。\r\n\r\n<stl:sqlContent>标签对应的实体为{stl:sqlContent}。\r\n\r\n"
+    },
+    "stl:sqlContents": {
+        "prefix": "stl:sqlContents",
+        "body": [
+            "<stl:sqlContents",
+            "\tconnectionStringName=\"数据库链接字符串名称\"",
+            "\tconnectionString=\"数据库链接字符串\"",
+            "\tqueryString=\"数据库查询语句\"",
+            "\ttotalNum=\"展示内容数目\"",
+            "\tstartNum=\"从第几条信息开始展示\"",
+            "\torder=\"排序\"",
+            "\twhere=\"获取内容列表的条件判断\"",
+            "\tcolumns=\"列数\"",
+            "\tdirection=\"方向\"",
+            "\theight=\"指定列表布局方式\"",
+            "\twidth=\"整体高度\"",
+            "\talign=\"整体宽度\"",
+            "\titemHeight=\"整体对齐\"",
+            "\titemWidth=\"项高度\"",
+            "\titemAlign=\"项宽度\"",
+            "\titemVerticalAlign=\"项水平对齐\"",
+            "\titemClass=\"项垂直对齐\"",
+            "\tlayout=\"项Css类\">",
+            "</stl:sqlContents>"
+        ],
+        "description": "\r\n通过 stl:sqlContents 标签在模板中展示数据库列表\r\n\r\n标签 <stl:sqlContents> 通过定义数据库链接字符串（connectionString 属性），使用 <stl:queryString> 和 <stl:sqlContent> 来获取数据库的数据。\r\n\r\n通过标签 <stl:queryString> 定义数据库查询语句，即SQL 语句。\r\n通过标签 <stl:sqlContent> 或 {Sql} 数据库实体 获取数据中的每一项。\r\n<stl:sqlContents> 标签对应的实体为{stl:sqlContents}。\r\n\r\n## 子标签\r\n\r\n| 子标签                            | 说明                    |\r\n| --------------------------------- | ----------------------- |\r\n| [stl:queryString]   | 定义数据库查询语句 |\r\n| [stl:itemTemplate] | 设置数据库数据列表项    |\r\n\r\n"
+    },
+    "stl:tags": {
+        "prefix": "stl:tags",
+        "body": [
+            "<stl:tags",
+            "\ttagLevel=\"标签级别\"",
+            "\ttotalNum=\"展示标签数目\"",
+            "\tisOrderByCount=\"是否按引用次数排序\"",
+            "\ttheme=\"主题样式\"",
+            "\tcontext=\"所处上下文\">",
+            "</stl:tags>"
+        ],
+        "description": "\r\n通过 stl:tags 标签在模板中展示内容标签\r\n\r\n标签是一种互联网内容组织方式，是相关性很强的关键字，它帮助人们轻松的描述和分类内容，以便于检索和分享，Tag是web 2.0的重要标签。\r\n\r\nstl:tags 标签用于在页面中展示标签云（Tag Cloud），标签云中标签的排列顺序依照字典排序，按照热门程度确定字体的大小和颜色。最终使得依照字典或者热门程度来寻找信息便成为可能。\r\n\r\n标签有三个重要属性：标签名、标签使用次数、标签级别（热门程度）。通常标签展示的字体大小和颜色由标签级别决定，标签级别由系统通过标签的使用次数计算而来。\r\n\r\n<stl:tags> 标签能够包含代码，用于控制每一条标签的展示样式。在<stl:tags>内部可以嵌入任何HTML代码和STL代码，除此以外还能够嵌入以下三种实体：标签名、标签使用次数、标签级别（热门程度）。其中标签名使用{Tag.Name}表示，标签使用次数使用{Tag.Count}表示，标签级别使用{Tag.Level}表示。\r\n\r\n如果<stl:tags> 标签内部不包含代码，系统将采用默认的展示样式展示标签云。\r\n\r\n如果 <stl:tags> 标签置于内容模板中，系统将仅展示当前内容包含的标签，如果希望在内容模板中展示站点内的所有标签，需要设置 context （上下文）属性为 \"Channel\"。\r\n\r\n属性 tagLevel 用于控制展示标签的级别，默认展示所有级别的标签。标签分为四个级别，代表有百分之多少的内容引用了此标签：\r\n\r\n级别一的标签引用百分比为0%—20%\r\n级别二的标签引用百分比为20%—50%\r\n级别三的标签引用百分比为50%—70%\r\n级别四的标签引用百分比为70%—100%\r\n属性 totalNum 控制展示标签数量。\r\n\r\n<stl:tags> 标签对应的实体为{stl:tags}。\r\n\r\n"
+    },
+    "stl:tree": {
+        "prefix": "stl:tree",
+        "body": [
+            "<stl:tree",
+            "\tchannelIndex=\"栏目索引\"",
+            "\tchannelName=\"栏目名称\"",
+            "\tupLevel=\"上级栏目的级别\"",
+            "\ttopLevel=\"从首页向下的栏目级别\"",
+            "\tgroupChannel=\"指定展示的栏目组\"",
+            "\tgroupChannelNot=\"指定不展示的栏目组\"",
+            "\ttitle=\"根节点展示名称\"",
+            "\tisLoading=\"是否AJAX方式即时载入\"",
+            "\tisShowContentNum=\"是否展示栏目内容数\"",
+            "\tisShowTreeLine=\"是否展示树状线\"",
+            "\tcurrentFormatString=\"当前项格式化字符串\"",
+            "\ttarget=\"打开窗口目标\">",
+            "</stl:tree>"
+        ],
+        "description": "\r\n以资源管理器树状列表的方式展示栏目列表。\r\n\r\ntitle 属性展示树状列表中第一个栏目的名称。\r\n\r\ncurrentFormatString 属性用来格式化当前栏目，使得当前栏目展示方式与其他栏目有所区别。currentFormatString 必须包含{0}，表示当前栏目的名称。\r\n\r\n<stl:tree> 标签对应的实体为{stl:tree}。\r\n\r\n"
+    },
+    "stl:value": {
+        "prefix": "stl:value",
+        "body": [
+            "<stl:value",
+            "\ttype=\"类型\"",
+            "\tformatString=\"展示的格式\"",
+            "\tseparator=\"展示多项时的分割字符串\"",
+            "\tstartIndex=\"字符开始位置\"",
+            "\tlength=\"指定字符长度\"",
+            "\twordNum=\"展示字符的数目\"",
+            "\tellipsis=\"文字超出部分展示的文字\"",
+            "\treplace=\"需要替换的文字，可以是正则表达式\"",
+            "\tto=\"替换replace的文字信息\"",
+            "\tisClearTags=\"是否清除标签信息\"",
+            "\tisReturnToBr=\"是否将回车替换为HTML换行标签\"",
+            "\tisLower=\"是否转换为小写\"",
+            "\tisUpper=\"是否转换为大写\">",
+            "</stl:value>"
+        ],
+        "description": "\r\n通过 stl:value 标签在模板中获取值\r\n\r\ntype 属性可以是指定的字符串，代表\"自定义模板语言\"中定义的标签名称，系统将解析对应的自定义模板标签。\r\n\r\n<stl:value> 标签对应的实体为{stl:value}。\r\n\r\n"
+    },
+    "stl:video": {
+        "prefix": "stl:video",
+        "body": [
+            "<stl:video",
+            "\ttype=\"指定视频的字段\"",
+            "\tplayUrl=\"视频地址\"",
+            "\timageUrl=\"图片地址\"",
+            "\twidth=\"宽度\"",
+            "\theight=\"高度\"",
+            "\tisAutoPlay=\"是否自动播放\"",
+            "\tisControls=\"是否展示播放控件\"",
+            "\tisLoop=\"是否循环播放\">",
+            "</stl:video>"
+        ],
+        "description": "\r\n通过 stl:video 标签在模板中展示视频播放器\r\n\r\nstl:video 标签为HTML5标签，最终将解析为HTML5标签 <video>，需要兼容IE6等低版本浏览器时请谨慎使用此标签。\r\n\r\nstl:video 标签的视频地址取自内容的视频字段（VideoUrl），可以通过type属性指定其他字段。同时也可以直接使用playUrl属性指定具体的视频播放地址。\r\n\r\n标签 <stl:video> 在内容模版中默认展示此内容的视频，在内容列表中将展示对应内容的视频。\r\n\r\nstl:video 标签能够作为 <stl:contents> 等标签的子标签，当作为 <stl:contents> 的子标签使用时将展示内容的视频。\r\n\r\n<stl:video> 标签对应的实体为{stl:video}。\r\n\r\n"
+    },
+    "stl:yes": {
+        "prefix": "stl:yes",
+        "body": [
+            "<stl:yes>",
+            "</stl:yes>"
+        ],
+        "description": "\r\n通过 stl:yes 标签在模板中展示成功模板\r\n"
+    },
+    "stl:zoom": {
+        "prefix": "stl:zoom",
+        "body": [
+            "<stl:zoom",
+            "\tzoomId=\"页面Html",
+            "\t中缩放对象的",
+            "\tId",
+            "\t属性\"",
+            "\tfontSize=\"缩放字体大小\">",
+            "</stl:zoom>"
+        ],
+        "description": "\r\n通过 stl:zoom 标签在模板中实现文字缩放功能\r\n\r\nstl:zoom 标签将展示缩放链接，点击此链接后缩放指定文字。\r\n\r\n"
+    },
+    "stl:PoweredBy": {
+        "prefix": "stl:PoweredBy",
+        "body": [
+            "{stl:PoweredBy}"
+        ],
+        "description": "通过{stl:PoweredBy}实体在模板中显示PoweredBy 链接"
+    },
+    "stl:SiteName": {
+        "prefix": "stl:SiteName",
+        "body": [
+            "{stl:SiteName}"
+        ],
+        "description": "通过{stl:SiteName}实体在模板中显示站点名称"
+    },
+    "stl:SiteId": {
+        "prefix": "stl:SiteId",
+        "body": [
+            "{stl:SiteId}"
+        ],
+        "description": "通过{stl:SiteId}实体在模板中显示站点Id"
+    },
+    "stl:SiteDir": {
+        "prefix": "stl:SiteDir",
+        "body": [
+            "{stl:SiteDir}"
+        ],
+        "description": "通过{stl:SiteDir}实体在模板中显示站点文件夹，如果为总站点，值为空"
+    },
+    "stl:SiteUrl": {
+        "prefix": "stl:SiteUrl",
+        "body": [
+            "{stl:SiteUrl}"
+        ],
+        "description": "通过{stl:SiteUrl}实体在模板中显示站点根目录地址"
+    },
+    "stl:RootUrl": {
+        "prefix": "stl:RootUrl",
+        "body": [
+            "{stl:RootUrl}"
+        ],
+        "description": "通过{stl:RootUrl}实体在模板中显示系统根目录地址"
+    },
+    "stl:CurrentUrl": {
+        "prefix": "stl:CurrentUrl",
+        "body": [
+            "{stl:CurrentUrl}"
+        ],
+        "description": "通过{stl:CurrentUrl}实体在模板中显示当前页地址"
+    },
+    "stl:ChannelUrl": {
+        "prefix": "stl:ChannelUrl",
+        "body": [
+            "{stl:ChannelUrl}"
+        ],
+        "description": "通过{stl:ChannelUrl}实体在模板中显示栏目页地址"
+    },
+    "Stl.Sitename": {
+        "prefix": "Stl.Sitename",
+        "body": [
+            "{stl.SiteName}"
+        ],
+        "description": "通过{stl.SiteName}实体在模板中显示站点名称"
+    },
+    "Stl.Siteid": {
+        "prefix": "Stl.Siteid",
+        "body": [
+            "{stl.SiteId}"
+        ],
+        "description": "通过{stl.SiteId}实体在模板中显示站点Id"
+    },
+    "Stl.Sitedir": {
+        "prefix": "Stl.Sitedir",
+        "body": [
+            "{stl.SiteDir}"
+        ],
+        "description": "通过{stl.SiteDir}实体在模板中显示站点文件夹，如果为总站点，值为空"
+    },
+    "Stl.Siteurl": {
+        "prefix": "Stl.Siteurl",
+        "body": [
+            "{stl.SiteUrl}"
+        ],
+        "description": "通过{stl.SiteUrl}实体在模板中显示站点根目录地址"
+    },
+    "Stl.Rooturl": {
+        "prefix": "Stl.Rooturl",
+        "body": [
+            "{stl.RootUrl}"
+        ],
+        "description": "通过{stl.RootUrl}实体在模板中显示系统根目录地址"
+    },
+    "Stl.Currenturl": {
+        "prefix": "Stl.Currenturl",
+        "body": [
+            "{stl.CurrentUrl}"
+        ],
+        "description": "通过{stl.CurrentUrl}实体在模板中显示当前页地址"
+    },
+    "Stl.Channelurl": {
+        "prefix": "Stl.Channelurl",
+        "body": [
+            "{stl.ChannelUrl}"
+        ],
+        "description": "通过{stl.ChannelUrl}实体在模板中显示栏目页地址"
+    },
+    "Channel.Channelid": {
+        "prefix": "Channel.Channelid",
+        "body": [
+            "{channel.ChannelId}"
+        ],
+        "description": "通过{channel.ChannelId}实体在模板中显示栏目Id"
+    },
+    "Channel.Title": {
+        "prefix": "Channel.Title",
+        "body": [
+            "{channel.Title}"
+        ],
+        "description": "通过{channel.Title}实体在模板中显示栏目名称"
+    },
+    "Channel.Channelindex": {
+        "prefix": "Channel.Channelindex",
+        "body": [
+            "{channel.ChannelIndex}"
+        ],
+        "description": "通过{channel.ChannelIndex}实体在模板中显示栏目索引"
+    },
+    "Channel.Content": {
+        "prefix": "Channel.Content",
+        "body": [
+            "{channel.Content}"
+        ],
+        "description": "通过{channel.Content}实体在模板中显示栏目正文"
+    },
+    "Channel.Navigationurl": {
+        "prefix": "Channel.Navigationurl",
+        "body": [
+            "{channel.NavigationUrl}"
+        ],
+        "description": "通过{channel.NavigationUrl}实体在模板中显示栏目链接地址"
+    },
+    "Channel.Imageurl": {
+        "prefix": "Channel.Imageurl",
+        "body": [
+            "{channel.ImageUrl}"
+        ],
+        "description": "通过{channel.ImageUrl}实体在模板中显示栏目图片地址"
+    },
+    "Channel.Adddate": {
+        "prefix": "Channel.Adddate",
+        "body": [
+            "{channel.AddDate}"
+        ],
+        "description": "通过{channel.AddDate}实体在模板中显示栏目添加日期"
+    },
+    "Channel.Directoryname": {
+        "prefix": "Channel.Directoryname",
+        "body": [
+            "{channel.DirectoryName}"
+        ],
+        "description": "通过{channel.DirectoryName}实体在模板中显示生成文件夹名称"
+    },
+    "Channel.Group": {
+        "prefix": "Channel.Group",
+        "body": [
+            "{channel.Group}"
+        ],
+        "description": "通过{channel.Group}实体在模板中显示栏目组别"
+    },
+    "Channel.Itemindex": {
+        "prefix": "Channel.Itemindex",
+        "body": [
+            "{channel.ItemIndex}"
+        ],
+        "description": "通过{channel.ItemIndex}实体在模板中显示栏目排序"
+    },
+    "Channel.Keywords": {
+        "prefix": "Channel.Keywords",
+        "body": [
+            "{channel.Keywords}"
+        ],
+        "description": "通过{channel.Keywords}实体在模板中显示关键字"
+    },
+    "Channel.Description": {
+        "prefix": "Channel.Description",
+        "body": [
+            "{channel.Description}"
+        ],
+        "description": "通过{channel.Description}实体在模板中显示页面描述"
+    },
+    "Content.Id": {
+        "prefix": "Content.Id",
+        "body": [
+            "{content.Id}"
+        ],
+        "description": "通过{content.Id}实体在模板中显示内容Id"
+    },
+    "Content.Title": {
+        "prefix": "Content.Title",
+        "body": [
+            "{content.Title}"
+        ],
+        "description": "通过{content.Title}实体在模板中显示内容标题"
+    },
+    "Content.Fulltitle": {
+        "prefix": "Content.Fulltitle",
+        "body": [
+            "{content.FullTitle}"
+        ],
+        "description": "通过{content.FullTitle}实体在模板中显示内容标题全称"
+    },
+    "Content.Content": {
+        "prefix": "Content.Content",
+        "body": [
+            "{content.Content}"
+        ],
+        "description": "通过{content.Content}实体在模板中显示内容正文"
+    },
+    "Content.Navigationurl": {
+        "prefix": "Content.Navigationurl",
+        "body": [
+            "{content.NavigationUrl}"
+        ],
+        "description": "通过{content.NavigationUrl}实体在模板中显示内容链接地址"
+    },
+    "Content.Imageurl": {
+        "prefix": "Content.Imageurl",
+        "body": [
+            "{content.ImageUrl}"
+        ],
+        "description": "通过{content.ImageUrl}实体在模板中显示内容图片地址"
+    },
+    "Content.Fileurl": {
+        "prefix": "Content.Fileurl",
+        "body": [
+            "{content.FileUrl}"
+        ],
+        "description": "通过{content.FileUrl}实体在模板中显示内容附件地址"
+    },
+    "Content.Downloadurl": {
+        "prefix": "Content.Downloadurl",
+        "body": [
+            "{content.DownloadUrl}"
+        ],
+        "description": "通过{content.DownloadUrl}实体在模板中显示内容附件地址(可统计下载量)"
+    },
+    "Content.Adddate": {
+        "prefix": "Content.Adddate",
+        "body": [
+            "{content.AddDate}"
+        ],
+        "description": "通过{content.AddDate}实体在模板中显示内容添加日期"
+    },
+    "Content.Lasteditdate": {
+        "prefix": "Content.Lasteditdate",
+        "body": [
+            "{content.LastEditDate}"
+        ],
+        "description": "通过{content.LastEditDate}实体在模板中显示内容最后修改日期"
+    },
+    "Content.Group": {
+        "prefix": "Content.Group",
+        "body": [
+            "{content.Group}"
+        ],
+        "description": "通过{content.Group}实体在模板中显示内容组别"
+    },
+    "Content.Tags": {
+        "prefix": "Content.Tags",
+        "body": [
+            "{content.Tags}"
+        ],
+        "description": "通过{content.Tags}实体在模板中显示内容标签"
+    },
+    "Content.Addusername": {
+        "prefix": "Content.Addusername",
+        "body": [
+            "{content.AddUserName}"
+        ],
+        "description": "通过{content.AddUserName}实体在模板中显示内容添加人"
+    },
+    "Content.Itemindex": {
+        "prefix": "Content.Itemindex",
+        "body": [
+            "{content.ItemIndex}"
+        ],
+        "description": "通过{content.ItemIndex}实体在模板中显示内容排序"
+    },
+    "Comment.Reference": {
+        "prefix": "Comment.Reference",
+        "body": [
+            "{comment.Reference}"
+        ],
+        "description": "通过{comment.Reference}实体在模板中显示引用"
+    },
+    "Comment.Digggood": {
+        "prefix": "Comment.Digggood",
+        "body": [
+            "{comment.DiggGood}"
+        ],
+        "description": "通过{comment.DiggGood}实体在模板中显示支持"
+    },
+    "Comment.Diggbad": {
+        "prefix": "Comment.Diggbad",
+        "body": [
+            "{comment.DiggBad}"
+        ],
+        "description": "通过{comment.DiggBad}实体在模板中显示反对"
+    },
+    "Comment.Id": {
+        "prefix": "Comment.Id",
+        "body": [
+            "{comment.Id}"
+        ],
+        "description": "通过{comment.Id}实体在模板中显示评论Id"
+    },
+    "Comment.Adddate": {
+        "prefix": "Comment.Adddate",
+        "body": [
+            "{comment.AddDate}"
+        ],
+        "description": "通过{comment.AddDate}实体在模板中显示评论时间"
+    },
+    "Comment.Username": {
+        "prefix": "Comment.Username",
+        "body": [
+            "{comment.UserName}"
+        ],
+        "description": "通过{comment.UserName}实体在模板中显示评论人"
+    },
+    "Comment.Ipaddress": {
+        "prefix": "Comment.Ipaddress",
+        "body": [
+            "{comment.IPAddress}"
+        ],
+        "description": "通过{comment.IPAddress}实体在模板中显示IP地址"
+    },
+    "Comment.Location": {
+        "prefix": "Comment.Location",
+        "body": [
+            "{comment.Location}"
+        ],
+        "description": "通过{comment.Location}实体在模板中显示IP所在位置"
+    },
+    "Comment.Good": {
+        "prefix": "Comment.Good",
+        "body": [
+            "{comment.Good}"
+        ],
+        "description": "通过{comment.Good}实体在模板中显示支持数目"
+    },
+    "Comment.Bad": {
+        "prefix": "Comment.Bad",
+        "body": [
+            "{comment.Bad}"
+        ],
+        "description": "通过{comment.Bad}实体在模板中显示反对数目"
+    },
+    "Comment.Floor": {
+        "prefix": "Comment.Floor",
+        "body": [
+            "{comment.Floor}"
+        ],
+        "description": "通过{comment.Floor}实体在模板中显示楼层"
+    },
+    "Comment.Content": {
+        "prefix": "Comment.Content",
+        "body": [
+            "{comment.Content}"
+        ],
+        "description": "通过{comment.Content}实体在模板中显示评论正文"
+    },
+    "Comment.Itemindex": {
+        "prefix": "Comment.Itemindex",
+        "body": [
+            "{comment.ItemIndex}"
+        ],
+        "description": "通过{comment.ItemIndex}实体在模板中显示评论排序"
+    },
+    "Sql.": {
+        "prefix": "Sql.",
+        "body": [
+            "{sql}"
+        ],
         "description": "通过 {sql.} 实体在模板中显示数据库值"
     },
-    "photo.PhotoId": { "prefix": "photo", "body": ["{photo.PhotoId}"], "description": "通过{photo.PhotoId}实体在模板中显示图片Id" },
-    "photo.SmallUrl": { "prefix": "photo", "body": ["{photo.SmallUrl}"], "description": "通过{photo.SmallUrl}实体在模板中显示显示缩略图" },
-    "photo.MiddleUrl": { "prefix": "photo", "body": ["{photo.MiddleUrl}"], "description": "通过{photo.MiddleUrl}实体在模板中显示显示小图" },
-    "photo.LargeUrl": { "prefix": "photo", "body": ["{photo.LargeUrl}"], "description": "通过{photo.LargeUrl}实体在模板中显示显示原图" },
-    "photo.Description": { "prefix": "photo", "body": ["{photo.Description}"], "description": "通过{photo.Description}实体在模板中显示图片描述" },
-    "photo.ItemIndex": { "prefix": "photo", "body": ["{photo.ItemIndex}"], "description": "通过{photo.ItemIndex}实体在模板中显示图片排序" },
-    "navigation.PreviousChannel": { "prefix": "navig", "body": ["{navigation.PreviousChannel}"], "description": "通过{navigation.PreviousChannel}实体在模板中显示上一栏目链接" },
-    "navigation.NextChannel": { "prefix": "navig", "body": ["{navigation.NextChannel}"], "description": "通过{navigation.NextChannel}实体在模板中显示下一栏目链接" },
-    "navigation.PreviousContent": { "prefix": "navig", "body": ["{navigation.PreviousContent}"], "description": "通过{navigation.PreviousContent}实体在模板中显示上一内容链接" },
-    "navigation.NextContent": { "prefix": "navig", "body": ["{navigation.NextContent}"], "description": "通过{navigation.NextContent}实体在模板中显示下一内容链接" },
-    "pageItem.FirstPage": { "prefix": "pageI", "body": ["{pageItem.FirstPage}"], "description": "通过{pageItem.FirstPage}实体在模板中显示首页" },
-    "pageItem.LastPage": { "prefix": "pageI", "body": ["{pageItem.LastPage}"], "description": "通过{pageItem.LastPage}实体在模板中显示末页" },
-    "pageItem.PreviousPage": { "prefix": "pageI", "body": ["{pageItem.PreviousPage}"], "description": "通过{pageItem.PreviousPage}实体在模板中显示上一页" },
-    "pageItem.NextPage": { "prefix": "pageI", "body": ["{pageItem.NextPage}"], "description": "通过{pageItem.NextPage}实体在模板中显示下一页" },
-    "pageItem.CurrentPageIndex": { "prefix": "pageI", "body": ["{pageItem.CurrentPageIndex}"], "description": "通过{pageItem.CurrentPageIndex}实体在模板中显示当前索引页" },
-    "pageItem.TotalPageNum": { "prefix": "pageI", "body": ["{pageItem.TotalPageNum}"], "description": "通过{pageItem.TotalPageNum}实体在模板中显示总页数" },
-    "pageItem.TotalNum": { "prefix": "pageI", "body": ["{pageItem.TotalNum}"], "description": "通过{pageItem.TotalNum}实体在模板中显示总内容数" },
-    "pageItem.PageNavigation": { "prefix": "pageI", "body": ["{pageItem.PageNavigation}"], "description": "通过{pageItem.PageNavigation}实体在模板中显示页导航" },
-    "pageItem.PageSelect": { "prefix": "pageI", "body": ["{pageItem.PageSelect}"], "description": "通过{pageItem.PageSelect}实体在模板中显示页跳转" },
-    "pageItem.Attribute_Type": { "prefix": "pageI", "body": ["{pageItem.Attribute_Type}"], "description": "通过{pageItem.Attribute_Type}实体在模板中显示类型" },
-    "pageItem.Attribute_Text": { "prefix": "pageI", "body": ["{pageItem.Attribute_Text}"], "description": "通过{pageItem.Attribute_Text}实体在模板中显示显示的文字" },
-    "pageItem.Attribute_LinkClass": { "prefix": "pageI", "body": ["{pageItem.Attribute_LinkClass}"], "description": "通过{pageItem.Attribute_LinkClass}实体在模板中显示链接CSS样式" },
-    "pageItem.Attribute_TextClass": { "prefix": "pageI", "body": ["{pageItem.Attribute_TextClass}"], "description": "通过{pageItem.Attribute_TextClass}实体在模板中显示文字CSS样式" },
-    "pageItem.Attribute_ListNum": { "prefix": "pageI", "body": ["{pageItem.Attribute_ListNum}"], "description": "通过{pageItem.Attribute_ListNum}实体在模板中显示页导航或页跳转显示链接数" },
-    "pageItem.Attribute_ListEllipsis": { "prefix": "pageI", "body": ["{pageItem.Attribute_ListEllipsis}"], "description": "通过{pageItem.Attribute_ListEllipsis}实体在模板中显示页导航或页跳转链接太多时显示的省略号" },
-    "tag.Attribute_TagLevel": { "prefix": "tag.A", "body": ["{tag.Attribute_TagLevel}"], "description": "通过{tag.Attribute_TagLevel}实体在模板中显示标签级别" },
-    "tag.Attribute_TotalNum": { "prefix": "tag.A", "body": ["{tag.Attribute_TotalNum}"], "description": "通过{tag.Attribute_TotalNum}实体在模板中显示显示标签数目" },
-    "tag.Attribute_IsOrderByCount": { "prefix": "tag.A", "body": ["{tag.Attribute_IsOrderByCount}"], "description": "通过{tag.Attribute_IsOrderByCount}实体在模板中显示是否按引用次数排序" },
-    "tag.Attribute_Theme": { "prefix": "tag.A", "body": ["{tag.Attribute_Theme}"], "description": "通过{tag.Attribute_Theme}实体在模板中显示主题样式" },
-    "tag.Attribute_Context": { "prefix": "tag.A", "body": ["{tag.Attribute_Context}"], "description": "通过{tag.Attribute_Context}实体在模板中显示所处上下文" },
-    "tag.Attribute_IsDynamic": { "prefix": "tag.A", "body": ["{tag.Attribute_IsDynamic}"], "description": "通过{tag.Attribute_IsDynamic}实体在模板中显示是否动态显示" },
-    "stl:PoweredBy": { "prefix": "stl:P", "body": ["{stl:PoweredBy}"], "description": "通过{stl:PoweredBy}实体在模板中显示PoweredBy 链接" },
-    "stl:SiteName": { "prefix": "stl:S", "body": ["{stl:SiteName}"], "description": "通过{stl:SiteName}实体在模板中显示站点名称" },
-    "stl:SiteId": { "prefix": "stl:S", "body": ["{stl:SiteId}"], "description": "通过{stl:SiteId}实体在模板中显示站点Id" },
-    "stl:SiteDir": { "prefix": "stl:S", "body": ["{stl:SiteDir}"], "description": "通过{stl:SiteDir}实体在模板中显示站点文件夹，如果为总站点，值为空" },
-    "stl:SiteUrl": { "prefix": "stl:S", "body": ["{stl:SiteUrl}"], "description": "通过{stl:SiteUrl}实体在模板中显示站点根目录地址" },
-    "stl:RootUrl": { "prefix": "stl:R", "body": ["{stl:RootUrl}"], "description": "通过{stl:RootUrl}实体在模板中显示系统根目录地址" },
-    "stl:CurrentUrl": { "prefix": "stl:C", "body": ["{stl:CurrentUrl}"], "description": "通过{stl:CurrentUrl}实体在模板中显示当前页地址" },
-    "stl:ChannelUrl": { "prefix": "stl:C", "body": ["{stl:ChannelUrl}"], "description": "通过{stl:ChannelUrl}实体在模板中显示栏目页地址" },
-    "user.UserName": { "prefix": "user.", "body": ["{user.UserName}"], "description": "通过{user.UserName}实体在模板中显示账号" },
-    "user.DisplayName": { "prefix": "user.", "body": ["{user.DisplayName}"], "description": "通过{user.DisplayName}实体在模板中显示姓名" },
-    "user.Email": { "prefix": "user.", "body": ["{user.Email}"], "description": "通过{user.Email}实体在模板中显示电子邮箱" },
-    "user.Mobile": { "prefix": "user.", "body": ["{user.Mobile}"], "description": "通过{user.Mobile}实体在模板中显示手机号码" },
-    "user.CreateDate": { "prefix": "user.", "body": ["{user.CreateDate}"], "description": "通过{user.CreateDate}实体在模板中显示注册时间" },
-    "user.LastActivityDate": { "prefix": "user.", "body": ["{user.LastActivityDate}"], "description": "通过{user.LastActivityDate}实体在模板中显示最近一次活动时间" },
-    "user.CreateIPAddress": { "prefix": "user.", "body": ["{user.CreateIPAddress}"], "description": "通过{user.CreateIPAddress}实体在模板中显示注册IP" },
-    "user.Group": { "prefix": "user.", "body": ["{user.Group}"], "description": "通过{user.Group}实体在模板中显示用户组" },
-    "user.Type": { "prefix": "user.", "body": ["{user.Type}"], "description": "通过{user.Type}实体在模板中显示用户类型" },
-    "user.AvatarLarge": { "prefix": "user.", "body": ["{user.AvatarLarge}"], "description": "通过{user.AvatarLarge}实体在模板中显示头像（大图）" },
-    "user.AvatarMiddle": { "prefix": "user.", "body": ["{user.AvatarMiddle}"], "description": "通过{user.AvatarMiddle}实体在模板中显示头像（中图）" },
-    "user.AvatarSmall": { "prefix": "user.", "body": ["{user.AvatarSmall}"], "description": "通过{user.AvatarSmall}实体在模板中显示头像（小图）" },
-    "user.login.submit": { "prefix": "user.", "body": ["{user.login.submit}"], "description": "通过{user.login.submit}实体在模板中显示登录提交按钮事件" },
-    "user.login.redirectToRegister": { "prefix": "user.", "body": ["{user.login.redirectToRegister}"], "description": "通过{user.login.redirectToRegister}实体在模板中显示跳转到用户注册页面" },
-    "user.login.redirectToForgetPassword": { "prefix": "user.", "body": ["{user.login.redirectToForgetPassword}"], "description": "通过{user.login.redirectToForgetPassword}实体在模板中显示跳转到找回密码页面" },
-    "user.register.submit": { "prefix": "user.", "body": ["{user.register.submit}"], "description": "通过{user.register.submit}实体在模板中显示用户注册提交" },
-    "user.forget.submit": { "prefix": "user.", "body": ["{user.forget.submit}"], "description": "通过{user.forget.submit}实体在模板中显示用户找回密码提交" },
-    "request.": {
-        "prefix": "requ",
-        "body": ["{request}"],
+    "Photo.Photoid": {
+        "prefix": "Photo.Photoid",
+        "body": [
+            "{photo.PhotoId}"
+        ],
+        "description": "通过{photo.PhotoId}实体在模板中显示图片Id"
+    },
+    "Photo.Smallurl": {
+        "prefix": "Photo.Smallurl",
+        "body": [
+            "{photo.SmallUrl}"
+        ],
+        "description": "通过{photo.SmallUrl}实体在模板中显示显示缩略图"
+    },
+    "Photo.Middleurl": {
+        "prefix": "Photo.Middleurl",
+        "body": [
+            "{photo.MiddleUrl}"
+        ],
+        "description": "通过{photo.MiddleUrl}实体在模板中显示显示小图"
+    },
+    "Photo.Largeurl": {
+        "prefix": "Photo.Largeurl",
+        "body": [
+            "{photo.LargeUrl}"
+        ],
+        "description": "通过{photo.LargeUrl}实体在模板中显示显示原图"
+    },
+    "Photo.Description": {
+        "prefix": "Photo.Description",
+        "body": [
+            "{photo.Description}"
+        ],
+        "description": "通过{photo.Description}实体在模板中显示图片描述"
+    },
+    "Photo.Itemindex": {
+        "prefix": "Photo.Itemindex",
+        "body": [
+            "{photo.ItemIndex}"
+        ],
+        "description": "通过{photo.ItemIndex}实体在模板中显示图片排序"
+    },
+    "Navigation.Previouschannel": {
+        "prefix": "Navigation.Previouschannel",
+        "body": [
+            "{navigation.PreviousChannel}"
+        ],
+        "description": "通过{navigation.PreviousChannel}实体在模板中显示上一栏目链接"
+    },
+    "Navigation.Nextchannel": {
+        "prefix": "Navigation.Nextchannel",
+        "body": [
+            "{navigation.NextChannel}"
+        ],
+        "description": "通过{navigation.NextChannel}实体在模板中显示下一栏目链接"
+    },
+    "Navigation.Previouscontent": {
+        "prefix": "Navigation.Previouscontent",
+        "body": [
+            "{navigation.PreviousContent}"
+        ],
+        "description": "通过{navigation.PreviousContent}实体在模板中显示上一内容链接"
+    },
+    "Navigation.Nextcontent": {
+        "prefix": "Navigation.Nextcontent",
+        "body": [
+            "{navigation.NextContent}"
+        ],
+        "description": "通过{navigation.NextContent}实体在模板中显示下一内容链接"
+    },
+    "Pageitem.Firstpage": {
+        "prefix": "Pageitem.Firstpage",
+        "body": [
+            "{pageItem.FirstPage}"
+        ],
+        "description": "通过{pageItem.FirstPage}实体在模板中显示首页"
+    },
+    "Pageitem.Lastpage": {
+        "prefix": "Pageitem.Lastpage",
+        "body": [
+            "{pageItem.LastPage}"
+        ],
+        "description": "通过{pageItem.LastPage}实体在模板中显示末页"
+    },
+    "Pageitem.Previouspage": {
+        "prefix": "Pageitem.Previouspage",
+        "body": [
+            "{pageItem.PreviousPage}"
+        ],
+        "description": "通过{pageItem.PreviousPage}实体在模板中显示上一页"
+    },
+    "Pageitem.Nextpage": {
+        "prefix": "Pageitem.Nextpage",
+        "body": [
+            "{pageItem.NextPage}"
+        ],
+        "description": "通过{pageItem.NextPage}实体在模板中显示下一页"
+    },
+    "Pageitem.Currentpageindex": {
+        "prefix": "Pageitem.Currentpageindex",
+        "body": [
+            "{pageItem.CurrentPageIndex}"
+        ],
+        "description": "通过{pageItem.CurrentPageIndex}实体在模板中显示当前索引页"
+    },
+    "Pageitem.Totalpagenum": {
+        "prefix": "Pageitem.Totalpagenum",
+        "body": [
+            "{pageItem.TotalPageNum}"
+        ],
+        "description": "通过{pageItem.TotalPageNum}实体在模板中显示总页数"
+    },
+    "Pageitem.Totalnum": {
+        "prefix": "Pageitem.Totalnum",
+        "body": [
+            "{pageItem.TotalNum}"
+        ],
+        "description": "通过{pageItem.TotalNum}实体在模板中显示总内容数"
+    },
+    "Pageitem.Pagenavigation": {
+        "prefix": "Pageitem.Pagenavigation",
+        "body": [
+            "{pageItem.PageNavigation}"
+        ],
+        "description": "通过{pageItem.PageNavigation}实体在模板中显示页导航"
+    },
+    "Pageitem.Pageselect": {
+        "prefix": "Pageitem.Pageselect",
+        "body": [
+            "{pageItem.PageSelect}"
+        ],
+        "description": "通过{pageItem.PageSelect}实体在模板中显示页跳转"
+    },
+    "Pageitem.Attribute_type": {
+        "prefix": "Pageitem.Attribute_type",
+        "body": [
+            "{pageItem.Attribute_Type}"
+        ],
+        "description": "通过{pageItem.Attribute_Type}实体在模板中显示类型"
+    },
+    "Pageitem.Attribute_text": {
+        "prefix": "Pageitem.Attribute_text",
+        "body": [
+            "{pageItem.Attribute_Text}"
+        ],
+        "description": "通过{pageItem.Attribute_Text}实体在模板中显示显示的文字"
+    },
+    "Pageitem.Attribute_linkclass": {
+        "prefix": "Pageitem.Attribute_linkclass",
+        "body": [
+            "{pageItem.Attribute_LinkClass}"
+        ],
+        "description": "通过{pageItem.Attribute_LinkClass}实体在模板中显示链接CSS样式"
+    },
+    "Pageitem.Attribute_textclass": {
+        "prefix": "Pageitem.Attribute_textclass",
+        "body": [
+            "{pageItem.Attribute_TextClass}"
+        ],
+        "description": "通过{pageItem.Attribute_TextClass}实体在模板中显示文字CSS样式"
+    },
+    "Pageitem.Attribute_listnum": {
+        "prefix": "Pageitem.Attribute_listnum",
+        "body": [
+            "{pageItem.Attribute_ListNum}"
+        ],
+        "description": "通过{pageItem.Attribute_ListNum}实体在模板中显示页导航或页跳转显示链接数"
+    },
+    "Pageitem.Attribute_listellipsis": {
+        "prefix": "Pageitem.Attribute_listellipsis",
+        "body": [
+            "{pageItem.Attribute_ListEllipsis}"
+        ],
+        "description": "通过{pageItem.Attribute_ListEllipsis}实体在模板中显示页导航或页跳转链接太多时显示的省略号"
+    },
+    "Tag.Attribute_taglevel": {
+        "prefix": "Tag.Attribute_taglevel",
+        "body": [
+            "{tag.Attribute_TagLevel}"
+        ],
+        "description": "通过{tag.Attribute_TagLevel}实体在模板中显示标签级别"
+    },
+    "Tag.Attribute_totalnum": {
+        "prefix": "Tag.Attribute_totalnum",
+        "body": [
+            "{tag.Attribute_TotalNum}"
+        ],
+        "description": "通过{tag.Attribute_TotalNum}实体在模板中显示显示标签数目"
+    },
+    "Tag.Attribute_isorderbycount": {
+        "prefix": "Tag.Attribute_isorderbycount",
+        "body": [
+            "{tag.Attribute_IsOrderByCount}"
+        ],
+        "description": "通过{tag.Attribute_IsOrderByCount}实体在模板中显示是否按引用次数排序"
+    },
+    "Tag.Attribute_theme": {
+        "prefix": "Tag.Attribute_theme",
+        "body": [
+            "{tag.Attribute_Theme}"
+        ],
+        "description": "通过{tag.Attribute_Theme}实体在模板中显示主题样式"
+    },
+    "Tag.Attribute_context": {
+        "prefix": "Tag.Attribute_context",
+        "body": [
+            "{tag.Attribute_Context}"
+        ],
+        "description": "通过{tag.Attribute_Context}实体在模板中显示所处上下文"
+    },
+    "Tag.Attribute_isdynamic": {
+        "prefix": "Tag.Attribute_isdynamic",
+        "body": [
+            "{tag.Attribute_IsDynamic}"
+        ],
+        "description": "通过{tag.Attribute_IsDynamic}实体在模板中显示是否动态显示"
+    },
+    "User.Username": {
+        "prefix": "User.Username",
+        "body": [
+            "{user.UserName}"
+        ],
+        "description": "通过{user.UserName}实体在模板中显示账号"
+    },
+    "User.Displayname": {
+        "prefix": "User.Displayname",
+        "body": [
+            "{user.DisplayName}"
+        ],
+        "description": "通过{user.DisplayName}实体在模板中显示姓名"
+    },
+    "User.Email": {
+        "prefix": "User.Email",
+        "body": [
+            "{user.Email}"
+        ],
+        "description": "通过{user.Email}实体在模板中显示电子邮箱"
+    },
+    "User.Mobile": {
+        "prefix": "User.Mobile",
+        "body": [
+            "{user.Mobile}"
+        ],
+        "description": "通过{user.Mobile}实体在模板中显示手机号码"
+    },
+    "User.Createdate": {
+        "prefix": "User.Createdate",
+        "body": [
+            "{user.CreateDate}"
+        ],
+        "description": "通过{user.CreateDate}实体在模板中显示注册时间"
+    },
+    "User.Lastactivitydate": {
+        "prefix": "User.Lastactivitydate",
+        "body": [
+            "{user.LastActivityDate}"
+        ],
+        "description": "通过{user.LastActivityDate}实体在模板中显示最近一次活动时间"
+    },
+    "User.Createipaddress": {
+        "prefix": "User.Createipaddress",
+        "body": [
+            "{user.CreateIPAddress}"
+        ],
+        "description": "通过{user.CreateIPAddress}实体在模板中显示注册IP"
+    },
+    "User.Group": {
+        "prefix": "User.Group",
+        "body": [
+            "{user.Group}"
+        ],
+        "description": "通过{user.Group}实体在模板中显示用户组"
+    },
+    "User.Type": {
+        "prefix": "User.Type",
+        "body": [
+            "{user.Type}"
+        ],
+        "description": "通过{user.Type}实体在模板中显示用户类型"
+    },
+    "User.Avatarlarge": {
+        "prefix": "User.Avatarlarge",
+        "body": [
+            "{user.AvatarLarge}"
+        ],
+        "description": "通过{user.AvatarLarge}实体在模板中显示头像（大图）"
+    },
+    "User.Avatarmiddle": {
+        "prefix": "User.Avatarmiddle",
+        "body": [
+            "{user.AvatarMiddle}"
+        ],
+        "description": "通过{user.AvatarMiddle}实体在模板中显示头像（中图）"
+    },
+    "User.Avatarsmall": {
+        "prefix": "User.Avatarsmall",
+        "body": [
+            "{user.AvatarSmall}"
+        ],
+        "description": "通过{user.AvatarSmall}实体在模板中显示头像（小图）"
+    },
+    "User.Login.Submit": {
+        "prefix": "User.Login.Submit",
+        "body": [
+            "{user.login.submit}"
+        ],
+        "description": "通过{user.login.submit}实体在模板中显示登录提交按钮事件"
+    },
+    "User.Login.Redirecttoregister": {
+        "prefix": "User.Login.Redirecttoregister",
+        "body": [
+            "{user.login.redirectToRegister}"
+        ],
+        "description": "通过{user.login.redirectToRegister}实体在模板中显示跳转到用户注册页面"
+    },
+    "User.Login.Redirecttoforgetpassword": {
+        "prefix": "User.Login.Redirecttoforgetpassword",
+        "body": [
+            "{user.login.redirectToForgetPassword}"
+        ],
+        "description": "通过{user.login.redirectToForgetPassword}实体在模板中显示跳转到找回密码页面"
+    },
+    "User.Register.Submit": {
+        "prefix": "User.Register.Submit",
+        "body": [
+            "{user.register.submit}"
+        ],
+        "description": "通过{user.register.submit}实体在模板中显示用户注册提交"
+    },
+    "User.Forget.Submit": {
+        "prefix": "User.Forget.Submit",
+        "body": [
+            "{user.forget.submit}"
+        ],
+        "description": "通过{user.forget.submit}实体在模板中显示用户找回密码提交"
+    },
+    "Request.": {
+        "prefix": "Request.",
+        "body": [
+            "{request}"
+        ],
         "description": "通过 {request.} 实体在模板中显示地址栏请求参数"
     }
 }
