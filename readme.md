@@ -6,7 +6,8 @@
 ## 参考资料
 插件中元素部分参考CMS5.0的说明文档https://stl.siteserver.cn/,以及CMS6.0的说明文档https://docs.siteserver.cn/stl/#/；
 插件中实体中的部分参考 CMS5.0的说明文档https://stl.siteserver.cn/。
-##安装说明：
+
+## 安装说明：
 在vscode的扩展搜索框中输入siteserver stl即可搜索到本插件，点击安装之后重新加载即可使用了。
 
 在html页面代码书写时，输入stl:c的时候会提示stl:channel和stl:channels组件，点击tab键或者用鼠标点击选中即可快速输入组件。
